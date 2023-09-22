@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Container</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #a5ccec;
+        height: 1000px;
+        display: flex;
+        align-items: center;
+      }
+
+      .container {
+        height: auto;
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media screen and (min-width: 1500px) {
+        .grid {
+          grid-template-columns: 35% 35%;
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        .flex {
+          flex-wrap: wrap;
+          padding: 1rem 0;
+        }
+
+        .flex > div > h2 {
+          margin-top: 1rem;
+          text-align: center;
+        }
+        .flex > div > p {
+          width: 80%;
+          text-align: center;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        .flex {
+          flex-wrap: nowrap;
+        }
+        .grid {
+          padding: 2rem;
+        }
+      }
+
+      .grid {
+        min-height: 500px;
+        display: grid;
+        justify-content: center;
+        column-gap: 2rem;
+        row-gap: 3rem;
+        align-content: center;
+        align-items: center;
+        place-items: center;
+        text-align: justify;
+        background-color: #fff;
+      }
+      .flex {
+        display: flex;
+        column-gap: 1rem;
+      }
+
+      .img {
+        background-color: #535d78;
+        text-align: center;
+        display: block;
+        margin: auto;
+        padding: 2rem 4rem;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        display: block;
+        filter: invert(100%);
+      }
+
+      p {
+        color: #535d78;
+        opacity: 45%;
+        margin-top: 0.5rem;
+        display: block;
+        font-weight: bolder;
+        line-height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div class="flex">
+          <div class="img">
+            <img src="img.png" alt="Img1" />
+          </div>
+          <div>
+            <h2>Perpiciatis Unde Omnis</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+              vitae temporibus, perferendis animi nostrum architecto quam
+              molestias quidem.
+            </p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="img">
+            <img src="img.png" alt="Img1" />
+          </div>
+          <div>
+            <h2>Sed Ut Unde Omnis</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+              vitae temporibus, perferendis animi nostrum architecto quam
+              molestias quidem.
+            </p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="img">
+            <img src="img.png" alt="Img1" />
+          </div>
+          <div>
+            <h2>lste Natus Error</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+              vitae temporibus, perferendis animi nostrum architecto quam
+              molestias quidem.
+            </p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="img">
+            <img src="img.png" alt="Img1" />
+          </div>
+          <div>
+            <h2>Sit Voluptatem Accusantiam</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+              vitae temporibus, perferendis animi nostrum architecto quam
+              molestias quidem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

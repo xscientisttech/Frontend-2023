@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="flex bg-secondary small-gap" style="height: 45px">
+        <div class="smallcircle"></div>
+        <div class="smallcircle"></div>
+        <div class="smallcircle"></div>
+      </div>
+      <div class="container">
+        <div class="flex justify-content-between navigation">
+          <div>
+            <div class="logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="148"
+                height="32"
+                viewBox="0 0 148 32"
+                fill="none"
+              >
+                <path
+                  d="M29.8537 0.444444C30.1839 0.444444 30.4691 0.562963 30.7092 0.8C30.9494 1.03704 31.0695 1.31852 31.0695 1.64444V8.4C31.0695 8.72593 30.9494 9.00741 30.7092 9.24445C30.4691 9.48148 30.1839 9.6 29.8537 9.6H12.1576V12.4444H26.9269C27.2571 12.4444 27.5423 12.563 27.7824 12.8C28.0226 13.037 28.1426 13.3185 28.1426 13.6444V20.3556C28.1426 20.6815 28.0226 20.963 27.7824 21.2C27.5423 21.437 27.2571 21.5556 26.9269 21.5556H12.1576V30.3556C12.1576 30.6815 12.0375 30.963 11.7974 31.2C11.5572 31.437 11.2721 31.5556 10.9419 31.5556H1.21576C0.885555 31.5556 0.600376 31.437 0.360226 31.2C0.120075 30.963 0 30.6815 0 30.3556V1.64444C0 1.31852 0.120075 1.03704 0.360226 0.8C0.600376 0.562963 0.885555 0.444444 1.21576 0.444444H29.8537Z"
+                  fill="#4785FF"
+                />
+                <path
+                  d="M67.5698 22.4444C67.9 22.4444 68.1851 22.563 68.4253 22.8C68.6654 23.037 68.7855 23.3185 68.7855 23.6444V30.3556C68.7855 30.6815 68.6654 30.963 68.4253 31.2C68.1851 31.437 67.9 31.5556 67.5698 31.5556H41.2733C40.9431 31.5556 40.6579 31.437 40.4177 31.2C40.1776 30.963 40.0575 30.6815 40.0575 30.3556V1.64444C40.0575 1.31852 40.1776 1.03704 40.4177 0.8C40.6579 0.562963 40.9431 0.444444 41.2733 0.444444H50.9994C51.3296 0.444444 51.6148 0.562963 51.8549 0.8C52.0951 1.03704 52.2151 1.31852 52.2151 1.64444V22.4444H67.5698Z"
+                  fill="#4785FF"
+                />
+                <path
+                  d="M107.897 18.7111C107.897 23.2444 106.366 26.5926 103.305 28.7556C100.273 30.9185 96.2201 32 91.147 32C86.0738 32 82.0062 30.9185 78.9443 28.7556C75.9124 26.5926 74.3965 23.2148 74.3965 18.6222V13.3778C74.3965 10.3556 75.1169 7.85185 76.5578 5.86667C78.0287 3.85185 80.025 2.37037 82.5466 1.42222C85.0681 0.474074 87.9349 0 91.147 0C94.359 0 97.2108 0.474074 99.7023 1.42222C102.224 2.37037 104.22 3.83704 105.691 5.82222C107.162 7.80741 107.897 10.2963 107.897 13.2889V18.7111ZM86.5541 19.5556C86.5541 20.7704 86.9593 21.7037 87.7698 22.3556C88.6104 23.0074 89.7361 23.3333 91.147 23.3333C92.5578 23.3333 93.6685 23.0074 94.479 22.3556C95.3196 21.6741 95.7398 20.7259 95.7398 19.5111V12.4889C95.7398 11.2741 95.3196 10.3407 94.479 9.68889C93.6685 9.00741 92.5578 8.66667 91.147 8.66667C89.7361 8.66667 88.6104 8.99259 87.7698 9.64444C86.9593 10.2963 86.5541 11.2296 86.5541 12.4444V19.5556Z"
+                  fill="#4785FF"
+                />
+                <path
+                  d="M125.441 30.3556C125.351 30.6222 125.126 30.8889 124.765 31.1556C124.435 31.4222 124 31.5556 123.46 31.5556H117.156C116.585 31.5556 116.105 31.3926 115.715 31.0667C115.355 30.7111 115.144 30.3111 115.084 29.8667L111.167 1.55556V1.42222C111.167 1.15556 111.257 0.933334 111.437 0.755556C111.647 0.548148 111.887 0.444444 112.158 0.444444H119.902C120.503 0.444444 120.983 0.622222 121.343 0.977778C121.734 1.33333 121.959 1.77778 122.019 2.31111L123.46 15.9111L126.071 8.84444C126.161 8.54815 126.371 8.26667 126.702 8C127.062 7.7037 127.512 7.55556 128.053 7.55556H131.114C131.655 7.55556 132.09 7.7037 132.42 8C132.78 8.26667 133.006 8.54815 133.096 8.84444L135.707 15.9111L137.148 2.31111C137.208 1.77778 137.418 1.33333 137.779 0.977778C138.169 0.622222 138.664 0.444444 139.265 0.444444H147.009C147.28 0.444444 147.505 0.548148 147.685 0.755556C147.895 0.933334 148 1.15556 148 1.42222V1.55556L144.083 29.8667C144.023 30.3111 143.797 30.7111 143.407 31.0667C143.047 31.3926 142.582 31.5556 142.011 31.5556H135.707C135.167 31.5556 134.717 31.4222 134.356 31.1556C134.026 30.8889 133.816 30.6222 133.726 30.3556L129.583 20.9778L125.441 30.3556Z"
+                  fill="#4785FF"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="flex medium-gap">
+            <div class="txt"></div>
+            <div class="txt"></div>
+            <div class="txt"></div>
+          </div>
+          <button type="button" class="btn"></button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="hero">
+          <div class="hero-content flex justify-content-between">
+            <div>
+              <div class="heading-big"></div>
+              <div class="w-397 h-16"></div>
+              <div class="w-340 h-16"></div>
+              <button type="button" class="btn hero-btn"></button>
+            </div>
+            <div>
+              <div class="img flex align-center">
+                <div class="icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex small-mid-gap">
+            <div class="medium-circle"></div>
+            <div>
+              <div class="flex small-gap">
+                <div class="star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M10.0979 1.8541C10.6966 0.0114765 13.3034 0.0114799 13.9021 1.8541L15.1432 5.67376C15.4109 6.49781 16.1789 7.05573 17.0453 7.05573H21.0615C22.999 7.05573 23.8045 9.53496 22.2371 10.6738L18.9879 13.0344C18.2869 13.5437 17.9936 14.4465 18.2614 15.2705L19.5024 19.0902C20.1012 20.9328 17.9922 22.465 16.4248 21.3262L13.1756 18.9656C12.4746 18.4563 11.5254 18.4563 10.8244 18.9656L7.57523 21.3262C6.0078 22.465 3.89885 20.9328 4.49755 19.0902L5.73863 15.2705C6.00638 14.4465 5.71306 13.5437 5.01209 13.0344L1.76289 10.6738C0.195462 9.53496 1.00102 7.05573 2.93846 7.05573H6.95469C7.82115 7.05573 8.58906 6.49781 8.8568 5.67376L10.0979 1.8541Z"
+                      fill="#B8CFFF"
+                    />
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M10.0979 1.8541C10.6966 0.0114765 13.3034 0.0114799 13.9021 1.8541L15.1432 5.67376C15.4109 6.49781 16.1789 7.05573 17.0453 7.05573H21.0615C22.999 7.05573 23.8045 9.53496 22.2371 10.6738L18.9879 13.0344C18.2869 13.5437 17.9936 14.4465 18.2614 15.2705L19.5024 19.0902C20.1012 20.9328 17.9922 22.465 16.4248 21.3262L13.1756 18.9656C12.4746 18.4563 11.5254 18.4563 10.8244 18.9656L7.57523 21.3262C6.0078 22.465 3.89885 20.9328 4.49755 19.0902L5.73863 15.2705C6.00638 14.4465 5.71306 13.5437 5.01209 13.0344L1.76289 10.6738C0.195462 9.53496 1.00102 7.05573 2.93846 7.05573H6.95469C7.82115 7.05573 8.58906 6.49781 8.8568 5.67376L10.0979 1.8541Z"
+                      fill="#B8CFFF"
+                    />
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M10.0979 1.8541C10.6966 0.0114765 13.3034 0.0114799 13.9021 1.8541L15.1432 5.67376C15.4109 6.49781 16.1789 7.05573 17.0453 7.05573H21.0615C22.999 7.05573 23.8045 9.53496 22.2371 10.6738L18.9879 13.0344C18.2869 13.5437 17.9936 14.4465 18.2614 15.2705L19.5024 19.0902C20.1012 20.9328 17.9922 22.465 16.4248 21.3262L13.1756 18.9656C12.4746 18.4563 11.5254 18.4563 10.8244 18.9656L7.57523 21.3262C6.0078 22.465 3.89885 20.9328 4.49755 19.0902L5.73863 15.2705C6.00638 14.4465 5.71306 13.5437 5.01209 13.0344L1.76289 10.6738C0.195462 9.53496 1.00102 7.05573 2.93846 7.05573H6.95469C7.82115 7.05573 8.58906 6.49781 8.8568 5.67376L10.0979 1.8541Z"
+                      fill="#B8CFFF"
+                    />
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M10.0979 1.8541C10.6966 0.0114765 13.3034 0.0114799 13.9021 1.8541L15.1432 5.67376C15.4109 6.49781 16.1789 7.05573 17.0453 7.05573H21.0615C22.999 7.05573 23.8045 9.53496 22.2371 10.6738L18.9879 13.0344C18.2869 13.5437 17.9936 14.4465 18.2614 15.2705L19.5024 19.0902C20.1012 20.9328 17.9922 22.465 16.4248 21.3262L13.1756 18.9656C12.4746 18.4563 11.5254 18.4563 10.8244 18.9656L7.57523 21.3262C6.0078 22.465 3.89885 20.9328 4.49755 19.0902L5.73863 15.2705C6.00638 14.4465 5.71306 13.5437 5.01209 13.0344L1.76289 10.6738C0.195462 9.53496 1.00102 7.05573 2.93846 7.05573H6.95469C7.82115 7.05573 8.58906 6.49781 8.8568 5.67376L10.0979 1.8541Z"
+                      fill="#B8CFFF"
+                    />
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M10.0979 1.8541C10.6966 0.0114765 13.3034 0.0114799 13.9021 1.8541L15.1432 5.67376C15.4109 6.49781 16.1789 7.05573 17.0453 7.05573H21.0615C22.999 7.05573 23.8045 9.53496 22.2371 10.6738L18.9879 13.0344C18.2869 13.5437 17.9936 14.4465 18.2614 15.2705L19.5024 19.0902C20.1012 20.9328 17.9922 22.465 16.4248 21.3262L13.1756 18.9656C12.4746 18.4563 11.5254 18.4563 10.8244 18.9656L7.57523 21.3262C6.0078 22.465 3.89885 20.9328 4.49755 19.0902L5.73863 15.2705C6.00638 14.4465 5.71306 13.5437 5.01209 13.0344L1.76289 10.6738C0.195462 9.53496 1.00102 7.05573 2.93846 7.05573H6.95469C7.82115 7.05573 8.58906 6.49781 8.8568 5.67376L10.0979 1.8541Z"
+                      fill="#B8CFFF"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="w-108 h-16"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section_3">
+      <div class="container">
+        <div class="section3">
+          <div class="heading-medium"></div>
+          <div class="w-340 h-16"></div>
+          <div class="w-300 h-16"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_4">
+      <div class="container">
+        <div class="flex section4 justify-content-between">
+          <div class="flex medium-large-gap subsection_4">
+            <div class="imagelg">
+              <div class="icon"></div>
+            </div>
+            <div>
+              <div class="heading-small"></div>
+              <div class="w-250 h-16"></div>
+              <div class="w-200 h-16"></div>
+            </div>
+          </div>
+          <div class="flex medium-large-gap subsection_4">
+            <div class="imagelg">
+              <div class="icon"></div>
+            </div>
+            <div>
+              <div class="heading-small"></div>
+              <div class="w-250 h-16"></div>
+              <div class="w-200 h-16"></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex section4 justify-content-between">
+          <div class="flex medium-large-gap subsection_4">
+            <div class="imagelg">
+              <div class="icon"></div>
+            </div>
+            <div>
+              <div class="heading-small"></div>
+              <div class="w-250 h-16"></div>
+              <div class="w-200 h-16"></div>
+            </div>
+          </div>
+          <div class="flex medium-large-gap subsection_4">
+            <div class="imagelg">
+              <div class="icon"></div>
+            </div>
+            <div>
+              <div class="heading-small"></div>
+              <div class="w-250 h-16"></div>
+              <div class="w-200 h-16"></div>
+            </div>
+          </div>
+        </div>
+        <div class="subsection_41 flex justify-content-center">
+          <div class="w-150 h-16"></div>
+          <w-100 class="w-100 h-16"></w-100>
+        </div>
+      </div>
+    </section>
+    <section class="section_5">
+      <div class="container">
+        <div class="section5 flex justify-content-between">
+          <div class="imagelarge flex">
+            <div class="icon"></div>
+          </div>
+          <div>
+            <div class="heading-medium1"></div>
+            <div class="heading-medium2"></div>
+            <div class="smalltxt1"></div>
+            <div class="smalltxt2"></div>
+            <div class="smalltxt3"></div>
+            <div class="subsection_5 flex justify-content-center">
+              <div>
+                <div class="big-heading"></div>
+                <div class="smalltxt4"></div>
+                <div class="smalltxt5"></div>
+              </div>
+              <div>
+                <div class="big-heading"></div>
+                <div class="smalltxt4"></div>
+                <div class="smalltxt5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subsection51 flex">
+          <div class="heading-medium5_1"></div>
+          <div class="smalltext5_1"></div>
+          <div class="smalltext5_2"></div>
+        </div>
+        <div class="subsection52 flex">
+          <div class="smalltext5_3"></div>
+          <div class="smalltext5_4"></div>
+          <div class="smalltext5_4"></div>
+          <div class="smalltext5_4"></div>
+          <div class="smalltext5_4"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section_6">
+      <div class="container">
+        <div class="section6 flex justify-content-between">
+          <div>
+            <div class="img6_1 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="96"
+                height="96"
+                viewBox="0 0 96 96"
+                fill="none"
+              >
+                <path
+                  d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="smalltext6_1 border-8px"></div>
+            <div class="bigtext6_1 border-8px"></div>
+          </div>
+          <div>
+            <div class="img6_1 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="96"
+                height="96"
+                viewBox="0 0 96 96"
+                fill="none"
+              >
+                <path
+                  d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="smalltext6_1 border-8px"></div>
+            <div class="bigtext6_1 border-8px"></div>
+          </div>
+          <div>
+            <div class="img6_1 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="96"
+                height="96"
+                viewBox="0 0 96 96"
+                fill="none"
+              >
+                <path
+                  d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="smalltext6_1 border-8px"></div>
+            <div class="bigtext6_1 border-8px"></div>
+          </div>
+        </div>
+        <div class="section6 flex justify-content-between">
+          <div>
+            <div class="img6_1 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="96"
+                height="96"
+                viewBox="0 0 96 96"
+                fill="none"
+              >
+                <path
+                  d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="smalltext6_1 border-8px"></div>
+            <div class="bigtext6_1 border-8px"></div>
+          </div>
+          <div>
+            <div class="img6_1 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="96"
+                height="96"
+                viewBox="0 0 96 96"
+                fill="none"
+              >
+                <path
+                  d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="smalltext6_1 border-8px"></div>
+            <div class="bigtext6_1 border-8px"></div>
+          </div>
+          <div>
+            <div class="img6_1 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="96"
+                height="96"
+                viewBox="0 0 96 96"
+                fill="none"
+              >
+                <path
+                  d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="smalltext6_1 border-8px"></div>
+            <div class="bigtext6_1 border-8px"></div>
+          </div>
+        </div>
+        <div class="subsection_6 flex">
+          <button type="button" class="btn"></button>
+        </div>
+      </div>
+    </section>
+    <section class="section_7">
+      <div class="container">
+        <div class="section7 flex">
+          <div class="subsection7 flex">
+            <div>
+              <div class="heading-medium7_1"></div>
+              <div class="smalltext7_1"></div>
+              <div class="smalltext7_2"></div>
+              <div class="flex btns">
+                <button type="button" class="btn"></button>
+                <button type="button" class="btn"></button>
+              </div>
+            </div>
+            <div class="img7_1 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="96"
+                height="96"
+                viewBox="0 0 96 96"
+                fill="none"
+              >
+                <path
+                  d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="subsection71 flex">
+          <div class="heading-medium5_1"></div>
+          <div class="smalltext5_1"></div>
+          <div class="smalltext5_2"></div>
+        </div>
+        <div class="subsection72 flex justify-content-center">
+          <div class="input"></div>
+          <div class="input"></div>
+          <div class="input"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section_8">
+      <div class="container">
+        <div class="section8">
+          <div class="subsection8_1 flex">
+            <div class="middle-circle"></div>
+            <div class="img8_1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="96"
+                height="96"
+                viewBox="0 0 96 96"
+                fill="none"
+              >
+                <path
+                  d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="heading-small"></div>
+              <div class="flex subsection_8">
+                <div class="smalltext8_1"></div>
+                <div class="smalltext8_1"></div>
+              </div>
+              <div class="smalltext8_2"></div>
+              <div class="smalltext8_3"></div>
+            </div>
+          </div>
+          <div class="subsection8_1 flex">
+            <div class="middle-circle"></div>
+            <div class="img8_1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="96"
+                height="96"
+                viewBox="0 0 96 96"
+                fill="none"
+              >
+                <path
+                  d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="heading-small"></div>
+              <div class="flex subsection_8">
+                <div class="smalltext8_1"></div>
+                <div class="smalltext8_1"></div>
+              </div>
+              <div class="smalltext8_2"></div>
+              <div class="smalltext8_3"></div>
+            </div>
+          </div>
+          <div class="subsection8_1 flex">
+            <div class="middle-circle"></div>
+            <div class="img8_1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="96"
+                height="96"
+                viewBox="0 0 96 96"
+                fill="none"
+              >
+                <path
+                  d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="heading-small"></div>
+              <div class="flex subsection_8">
+                <div class="smalltext8_1"></div>
+                <div class="smalltext8_1"></div>
+              </div>
+              <div class="smalltext8_2"></div>
+              <div class="smalltext8_3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="subsection_41 flex justify-content-center">
+          <div class="w-150 h-16"></div>
+          <div class="w-100 h-16"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section_9">
+      <div class="container">
+        <div class="section9 flex">
+          <div>
+            <div class="heading_medium9_1"></div>
+            <div class="smalltext9_1"></div>
+            <div class="smalltext9_2"></div>
+          </div>
+          <div>
+            <button type="button" class="btn"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section_10">
+      <div class="container">
+        <div class="section10 flex">
+          <div class="flex subsection10">
+            <div class="paddingimg">
+              <img src="Icon_1.svg" alt="" class="img_10" />
+            </div>
+            <div>
+              <div class="headingsmall10_1 w-160 h-32"></div>
+              <div class="headingsmall10_2 w-90 h-16"></div>
+              <div class="flex smallmidgap mt-32px">
+                <div class="smallmidcircle"></div>
+                <div class="smallmidcircle"></div>
+                <div class="smallmidcircle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex subsection10">
+            <div class="paddingimg">
+              <img src="Icon_1.svg" alt="" class="img_10" />
+            </div>
+            <div>
+              <div class="headingsmall10_1 w-160 h-32"></div>
+              <div class="headingsmall10_2 w-90 h-16"></div>
+              <div class="flex smallmidgap mt-32px">
+                <div class="smallmidcircle"></div>
+                <div class="smallmidcircle"></div>
+                <div class="smallmidcircle"></div>
+              </div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div class="subsection10_1 flex">
+          <div class="circle-16px"></div>
+          <div class="circle-16px"></div>
+          <div class="circle-16px"></div>
+        </div>
+        <div class="subsection71 flex">
+          <div class="heading-medium5_1"></div>
+          <div class="smalltext5_1"></div>
+          <div class="smalltext5_2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section_11">
+      <div class="container">
+        <div class="section11 flex">
+          <div class="flex subsection11">
+            <div class="imagemd">
+              <img src="Icon_1.svg" alt="" class="img_11" />
+            </div>
+            <div>
+              <div class="flex small-gap">
+                <img src="Star.svg" alt="" class="starmd" />
+                <img src="Star.svg" alt="" class="starmd" />
+                <img src="Star.svg" alt="" class="starmd" />
+                <img src="Star.svg" alt="" class="starmd" />
+                <img src="Star.svg" alt="" class="starmd" />
+              </div>
+              <div class="smalltext11_1 border-8px"></div>
+              <div class="smalltext11_2 border-8px"></div>
+              <div class="smalltext11_3 border-8px"></div>
+              <div class="mediumtext11_1 border-8px"></div>
+              <div class="smalltext11_4 border-8px"></div>
+            </div>
+          </div>
+          <div class="flex subsection11">
+            <div class="imagemd">
+              <img src="Icon_1.svg" alt="" class="img_11" />
+            </div>
+            <div>
+              <div class="flex small-gap">
+                <img src="Star.svg" alt="" class="starmd" />
+                <img src="Star.svg" alt="" class="starmd" />
+                <img src="Star.svg" alt="" class="starmd" />
+                <img src="Star.svg" alt="" class="starmd" />
+                <img src="Star.svg" alt="" class="starmd" />
+              </div>
+              <div class="smalltext11_1 border-8px"></div>
+              <div class="smalltext11_2 border-8px"></div>
+              <div class="smalltext11_3 border-8px"></div>
+              <div class="mediumtext11_1 border-8px"></div>
+              <div class="smalltext11_4 border-8px"></div>
+            </div>
+          </div>
+        </div>
+        <div class="subsection10_1 flex">
+          <div class="circle-16px"></div>
+          <div class="circle-16px"></div>
+          <div class="circle-16px"></div>
+        </div>
+        <div class="subsection11_1 flex">
+          <div class="heading-medium11_1"></div>
+          <div class="heading-medium11_2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section_12">
+      <div class="container">
+        <div class="section12 flex">
+          <div class="subsection12">
+            <div class="mediumtext12_1"></div>
+            <div class="mediumtext12_2"></div>
+            <div class="smalltext12_1"></div>
+            <div class="smalltext12_2"></div>
+            <div class="smalltext12_3"></div>
+            <button type="button" class="btn btn12"></button>
+          </div>
+          <div class="subsection12">
+            <div class="mediumtext12_1 bg-white"></div>
+            <div class="mediumtext12_2"></div>
+            <div class="smalltext12_1"></div>
+            <div class="smalltext12_2"></div>
+            <div class="smalltext12_3"></div>
+            <button type="button" class="btn btn12"></button>
+          </div>
+          <div class="subsection12">
+            <div class="mediumtext12_1"></div>
+            <div class="mediumtext12_2"></div>
+            <div class="smalltext12_1"></div>
+            <div class="smalltext12_2"></div>
+            <div class="smalltext12_3"></div>
+            <button type="button" class="btn btn12"></button>
+          </div>
+          <div class="subsection12">
+            <div class="mediumtext12_1"></div>
+            <div class="mediumtext12_2"></div>
+            <div class="smalltext12_1"></div>
+            <div class="smalltext12_2"></div>
+            <div class="smalltext12_3"></div>
+            <button type="button" class="btn btn12"></button>
+          </div>
+        </div>
+        <div class="subsection_41 flex justify-content-center">
+          <div class="w-150 h-16"></div>
+          <div class="w-100 h-16"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section_13">
+      <div class="container">
+        <div class="section13 flex">
+          <div class="subsection13">
+            <div class="mediumtext13_1"></div>
+            <div class="smalltext13_1"></div>
+            <div class="smalltext13_2"></div>
+            <div class="smalltext13_3"></div>
+            <button type="button" class="btn btn12"></button>
+          </div>
+          <div>
+            <div class="subsection13_1">
+              <div class="flex justify-content-between">
+                <div class="mediumtext13_2"></div>
+                <div class="circle13"></div>
+              </div>
+              <div class="smalltext13_4"></div>
+              <div class="smalltext13_5"></div>
+            </div>
+            <div class="subsection13_2">
+              <div class="flex justify-content-between">
+                <div class="mediumtext13_3"></div>
+                <div class="circle13"></div>
+              </div>
+            </div>
+            <div class="subsection13_3">
+              <div class="flex justify-content-between">
+                <div class="mediumtext13_4"></div>
+                <div class="circle13"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subsection71 flex">
+          <div class="heading-medium5_1"></div>
+          <div class="smalltext5_1"></div>
+          <div class="smalltext5_2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section_14">
+      <div class="container">
+        <div class="section14_1 flex justify-content-between">
+          <div class="heading-medium14"></div>
+          <div class="heading-medium14"></div>
+          <div class="heading-medium14"></div>
+          <div class="heading-medium14"></div>
+          <div class="heading-medium14"></div>
+        </div>
+        <div class="section14_2 flex">
+          <div class="heading-medium14"></div>
+          <div class="heading-medium14"></div>
+          <div class="heading-medium14"></div>
+          <div class="heading-medium14"></div>
+        </div>
+        <div class="subsection_41 flex justify-content-center">
+          <div class="w-150 h-16"></div>
+          <div class="w-100 h-16"></div>
+        </div>
+        <div class="subsection11_1 flex">
+          <div class="heading-medium11_1"></div>
+          <div class="heading-medium11_2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section_15">
+      <div class="container">
+        <div class="section15 flex justify-content-center">
+          <div class="subsection15_1">
+            <div class="img15_1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+                <path d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="heading-small15_1"></div>
+            <div class="heading-small15_2"></div>
+            <div class="subsection15_2 flex">
+              <div class="smallesticon15_1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M1.3125 11.25C1.3125 11.25 0.375 11.25 0.375 10.3125C0.375 9.375 1.3125 6.5625 6 6.5625C10.6875 6.5625 11.625 9.375 11.625 10.3125C11.625 11.25 10.6875 11.25 10.6875 11.25H1.3125ZM6 5.625C6.74592 5.625 7.46129 5.32868 7.98874 4.80124C8.51618 4.27379 8.8125 3.55842 8.8125 2.8125C8.8125 2.06658 8.51618 1.35121 7.98874 0.823762C7.46129 0.296316 6.74592 0 6 0C5.25408 0 4.53871 0.296316 4.01126 0.823762C3.48382 1.35121 3.1875 2.06658 3.1875 2.8125C3.1875 3.55842 3.48382 4.27379 4.01126 4.80124C4.53871 5.32868 5.25408 5.625 6 5.625Z" fill="white"/>
+                </svg>
+              </div>
+              <div class="heading-small15_3"></div>
+              <div class="heading-small15_4"></div>
+            </div>
+          </div>
+          <div class="subsection15_1">
+            <div class="img15_1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+                <path d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="heading-small15_1"></div>
+            <div class="heading-small15_2"></div>
+            <div class="subsection15_2 flex">
+              <div class="smallesticon15_1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M1.3125 11.25C1.3125 11.25 0.375 11.25 0.375 10.3125C0.375 9.375 1.3125 6.5625 6 6.5625C10.6875 6.5625 11.625 9.375 11.625 10.3125C11.625 11.25 10.6875 11.25 10.6875 11.25H1.3125ZM6 5.625C6.74592 5.625 7.46129 5.32868 7.98874 4.80124C8.51618 4.27379 8.8125 3.55842 8.8125 2.8125C8.8125 2.06658 8.51618 1.35121 7.98874 0.823762C7.46129 0.296316 6.74592 0 6 0C5.25408 0 4.53871 0.296316 4.01126 0.823762C3.48382 1.35121 3.1875 2.06658 3.1875 2.8125C3.1875 3.55842 3.48382 4.27379 4.01126 4.80124C4.53871 5.32868 5.25408 5.625 6 5.625Z" fill="white"/>
+                </svg>
+              </div>
+              <div class="heading-small15_3"></div>
+              <div class="heading-small15_4"></div>
+            </div>
+          </div>
+          <div class="subsection15_1">
+            <div class="img15_1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+                <path d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="heading-small15_1"></div>
+            <div class="heading-small15_2"></div>
+            <div class="subsection15_2 flex">
+              <div class="smallesticon15_1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M1.3125 11.25C1.3125 11.25 0.375 11.25 0.375 10.3125C0.375 9.375 1.3125 6.5625 6 6.5625C10.6875 6.5625 11.625 9.375 11.625 10.3125C11.625 11.25 10.6875 11.25 10.6875 11.25H1.3125ZM6 5.625C6.74592 5.625 7.46129 5.32868 7.98874 4.80124C8.51618 4.27379 8.8125 3.55842 8.8125 2.8125C8.8125 2.06658 8.51618 1.35121 7.98874 0.823762C7.46129 0.296316 6.74592 0 6 0C5.25408 0 4.53871 0.296316 4.01126 0.823762C3.48382 1.35121 3.1875 2.06658 3.1875 2.8125C3.1875 3.55842 3.48382 4.27379 4.01126 4.80124C4.53871 5.32868 5.25408 5.625 6 5.625Z" fill="white"/>
+                </svg>
+              </div>
+              <div class="heading-small15_3"></div>
+              <div class="heading-small15_4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-content-center">
+          <div class="btn"></div>
+        </div>
+        <div class="subsection71 flex">
+          <div class="heading-medium5_1"></div>
+          <div class="smalltext5_1"></div>
+          <div class="smalltext5_2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section_16">
+      <div class="container">
+        <div class="section16 flex">
+          <div class="subsection16_1 flex justify-content-center">
+            <div class="mediumtext16_1"></div>
+            <div class="mediumtext16_1"></div>
+          </div>
+          <div class="largetext16_1"></div>
+          <div class="flex justify-content-center">
+            <button class="btn btndarkblue"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <div class="flex justify-content-between footersection">
+          <div class="logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="148"
+              height="32"
+              viewBox="0 0 148 32"
+              fill="none"
+            >
+              <path
+                d="M29.8537 0.444444C30.1839 0.444444 30.4691 0.562963 30.7092 0.8C30.9494 1.03704 31.0695 1.31852 31.0695 1.64444V8.4C31.0695 8.72593 30.9494 9.00741 30.7092 9.24445C30.4691 9.48148 30.1839 9.6 29.8537 9.6H12.1576V12.4444H26.9269C27.2571 12.4444 27.5423 12.563 27.7824 12.8C28.0226 13.037 28.1426 13.3185 28.1426 13.6444V20.3556C28.1426 20.6815 28.0226 20.963 27.7824 21.2C27.5423 21.437 27.2571 21.5556 26.9269 21.5556H12.1576V30.3556C12.1576 30.6815 12.0375 30.963 11.7974 31.2C11.5572 31.437 11.2721 31.5556 10.9419 31.5556H1.21576C0.885555 31.5556 0.600376 31.437 0.360226 31.2C0.120075 30.963 0 30.6815 0 30.3556V1.64444C0 1.31852 0.120075 1.03704 0.360226 0.8C0.600376 0.562963 0.885555 0.444444 1.21576 0.444444H29.8537Z"
+                fill="#4785FF"
+              />
+              <path
+                d="M67.5698 22.4444C67.9 22.4444 68.1851 22.563 68.4253 22.8C68.6654 23.037 68.7855 23.3185 68.7855 23.6444V30.3556C68.7855 30.6815 68.6654 30.963 68.4253 31.2C68.1851 31.437 67.9 31.5556 67.5698 31.5556H41.2733C40.9431 31.5556 40.6579 31.437 40.4177 31.2C40.1776 30.963 40.0575 30.6815 40.0575 30.3556V1.64444C40.0575 1.31852 40.1776 1.03704 40.4177 0.8C40.6579 0.562963 40.9431 0.444444 41.2733 0.444444H50.9994C51.3296 0.444444 51.6148 0.562963 51.8549 0.8C52.0951 1.03704 52.2151 1.31852 52.2151 1.64444V22.4444H67.5698Z"
+                fill="#4785FF"
+              />
+              <path
+                d="M107.897 18.7111C107.897 23.2444 106.366 26.5926 103.305 28.7556C100.273 30.9185 96.2201 32 91.147 32C86.0738 32 82.0062 30.9185 78.9443 28.7556C75.9124 26.5926 74.3965 23.2148 74.3965 18.6222V13.3778C74.3965 10.3556 75.1169 7.85185 76.5578 5.86667C78.0287 3.85185 80.025 2.37037 82.5466 1.42222C85.0681 0.474074 87.9349 0 91.147 0C94.359 0 97.2108 0.474074 99.7023 1.42222C102.224 2.37037 104.22 3.83704 105.691 5.82222C107.162 7.80741 107.897 10.2963 107.897 13.2889V18.7111ZM86.5541 19.5556C86.5541 20.7704 86.9593 21.7037 87.7698 22.3556C88.6104 23.0074 89.7361 23.3333 91.147 23.3333C92.5578 23.3333 93.6685 23.0074 94.479 22.3556C95.3196 21.6741 95.7398 20.7259 95.7398 19.5111V12.4889C95.7398 11.2741 95.3196 10.3407 94.479 9.68889C93.6685 9.00741 92.5578 8.66667 91.147 8.66667C89.7361 8.66667 88.6104 8.99259 87.7698 9.64444C86.9593 10.2963 86.5541 11.2296 86.5541 12.4444V19.5556Z"
+                fill="#4785FF"
+              />
+              <path
+                d="M125.441 30.3556C125.351 30.6222 125.126 30.8889 124.765 31.1556C124.435 31.4222 124 31.5556 123.46 31.5556H117.156C116.585 31.5556 116.105 31.3926 115.715 31.0667C115.355 30.7111 115.144 30.3111 115.084 29.8667L111.167 1.55556V1.42222C111.167 1.15556 111.257 0.933334 111.437 0.755556C111.647 0.548148 111.887 0.444444 112.158 0.444444H119.902C120.503 0.444444 120.983 0.622222 121.343 0.977778C121.734 1.33333 121.959 1.77778 122.019 2.31111L123.46 15.9111L126.071 8.84444C126.161 8.54815 126.371 8.26667 126.702 8C127.062 7.7037 127.512 7.55556 128.053 7.55556H131.114C131.655 7.55556 132.09 7.7037 132.42 8C132.78 8.26667 133.006 8.54815 133.096 8.84444L135.707 15.9111L137.148 2.31111C137.208 1.77778 137.418 1.33333 137.779 0.977778C138.169 0.622222 138.664 0.444444 139.265 0.444444H147.009C147.28 0.444444 147.505 0.548148 147.685 0.755556C147.895 0.933334 148 1.15556 148 1.42222V1.55556L144.083 29.8667C144.023 30.3111 143.797 30.7111 143.407 31.0667C143.047 31.3926 142.582 31.5556 142.011 31.5556H135.707C135.167 31.5556 134.717 31.4222 134.356 31.1556C134.026 30.8889 133.816 30.6222 133.726 30.3556L129.583 20.9778L125.441 30.3556Z"
+                fill="#4785FF"
+              />
+            </svg>
+          </div>
+            <div class="flex justify-content-center small-mid-gap">
+              <div class="headingsmall_footer w-90 h-16"></div>
+              <div class="headingsmall_footer w-90 h-16"></div>
+              <div class="headingsmall_footer w-90 h-16"></div>
+            </div>
+            <div class="flex justify-content-center small-mid-gap">
+              <div class="smallmidcircle bg-grey"></div>
+              <div class="smallmidcircle  bg-grey"></div>
+              <div class="smallmidcircle  bg-grey"></div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
