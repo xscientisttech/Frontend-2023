@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
 	<title></title>
 	<link rel="stylesheet" href="style.css" media="all">
 </head>
 <body>
 	<!-- Navigation Bar -->
-	<div class="nav flex flex-space flex-center"> 
+	<div class="nav flex flex-center"> 
 		<svg class="logo" width="148" height="32" viewBox="0 0 148 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M29.8537 0.444444C30.1839 0.444444 30.4691 0.562963 30.7092 0.8C30.9494 1.03704 31.0695 1.31852 31.0695 1.64444V8.4C31.0695 8.72593 30.9494 9.00741 30.7092 9.24445C30.4691 9.48148 30.1839 9.6 29.8537 9.6H12.1576V12.4444H26.9269C27.2571 12.4444 27.5423 12.563 27.7824 12.8C28.0226 13.037 28.1426 13.3185 28.1426 13.6444V20.3556C28.1426 20.6815 28.0226 20.963 27.7824 21.2C27.5423 21.437 27.2571 21.5556 26.9269 21.5556H12.1576V30.3556C12.1576 30.6815 12.0375 30.963 11.7974 31.2C11.5572 31.437 11.2721 31.5556 10.9419 31.5556H1.21576C0.885555 31.5556 0.600376 31.437 0.360226 31.2C0.120075 30.963 0 30.6815 0 30.3556V1.64444C0 1.31852 0.120075 1.03704 0.360226 0.8C0.600376 0.562963 0.885555 0.444444 1.21576 0.444444H29.8537Z" fill="#4785FF"/>
 			<path d="M67.5698 22.4444C67.9 22.4444 68.1851 22.563 68.4253 22.8C68.6654 23.037 68.7855 23.3185 68.7855 23.6444V30.3556C68.7855 30.6815 68.6654 30.963 68.4253 31.2C68.1851 31.437 67.9 31.5556 67.5698 31.5556H41.2733C40.9431 31.5556 40.6579 31.437 40.4177 31.2C40.1776 30.963 40.0575 30.6815 40.0575 30.3556V1.64444C40.0575 1.31852 40.1776 1.03704 40.4177 0.8C40.6579 0.562963 40.9431 0.444444 41.2733 0.444444H50.9994C51.3296 0.444444 51.6148 0.562963 51.8549 0.8C52.0951 1.03704 52.2151 1.31852 52.2151 1.64444V22.4444H67.5698Z" fill="#4785FF"/>
@@ -23,9 +24,9 @@
 		</div>		
 	</div>
 	<!-- First Image and Text Container -->
-	<div class="flex flex-center">
-		<div class="container flex flex-row flex-center flex-space">
-			<div class="img flex flex-center border-radius">
+	<div class="outer-div">
+		<div class="container-one flex flex-row flex-center flex-wrap">
+			<div class="img container-img flex flex-center border-radius">
 				<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z" fill="white"/>
 				</svg>	
@@ -45,8 +46,13 @@
 		</div>
 	</div>
 	<!-- Second Image and Text Container -->
-	<div class="flex flex-center">
-		<div class="container flex flex-row flex-center flex-space">
+	<div class="outer-div">
+		<div class="container-two flex flex-row flex-center flex-wrap">
+			<div class="img container-img flex flex-center border-radius">
+				<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z" fill="white"/>
+				</svg>	
+			</div>
 			<div class="info">
 				<div class="heading3 border-radius"></div>
 				<div class="info-text flex flex-column border-radius">
@@ -63,15 +69,10 @@
 					<div class="block-text4 border-radius"></div>
 				</div>
 			</div>
-			<div class="img flex flex-center border-radius">
-				<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z" fill="white"/>
-				</svg>	
-			</div>
 		</div>
 	</div>
 	<!-- Info and Text Container -->
-	<div class="flex flex-center">
+	<div class="outer-div">
 		<div class="text-contained flex flex-center flex-column">
 			<div class="medium-text border-radius"></div>
 			<div class="text-area flex flex-column">
@@ -81,9 +82,9 @@
 		</div>
 	</div>
 	<!-- Profile Container -->
-	<div class="flex flex-center">
+	<div class="outer-div">
 		<div class="column-container flex flex-row flex-center flex-wrap">
-			<div class="column-block flex flex-row">
+			<div class="column-block flex flex-row flex-wrap">
 				<div class="column-img"></div>
 				<div class="profile-block flex flex-column">
 					<div class="column-heading border-radius"></div>
@@ -93,7 +94,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="column-block flex flex-row">
+			<div class="column-block flex flex-row flex-wrap">
 				<div class="column-img"></div>
 				<div class="profile-block flex flex-column">
 					<div class="column-heading border-radius"></div>
@@ -103,7 +104,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="column-block flex flex-row">
+			<div class="column-block flex flex-row flex-wrap">
 				<div class="column-img"></div>
 				<div class="profile-block flex flex-column">
 					<div class="column-heading border-radius"></div>
@@ -113,7 +114,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="column-block flex flex-row">
+			<div class="column-block flex flex-row flex-wrap">
 				<div class="column-img"></div>
 				<div class="profile-block flex flex-column">
 					<div class="column-heading border-radius"></div>
@@ -126,14 +127,14 @@
 		</div>
 	</div>
 	<!-- Scroll Container -->
-	<div class="flex flex-center">
+	<div class="outer-div">
 		<div class="scroll-container flex flex-center flex-row">
 			<div class="container1 border-radius"></div>
 			<div class="container2 border-radius"></div>
 		</div>
 	</div>
 	<!-- Text Left Container -->
-	<div class="flex flex-center">
+	<div class="outer-div">
 		<div class="text-left-container">
 			<div class="medium-text border-radius"></div>
 			<div class="text-area flex flex-column">
@@ -143,7 +144,7 @@
 		</div>
 	</div>
 	<!-- Text Left Scrollbar -->
-	<div class="flex flex-center">
+	<div class="outer-div">
 		<div class="text-left-filter flex flex row">
 			<div class="filter-text-blue border-radius"></div>
 			<div class="filter-text border-radius"></div>
@@ -153,8 +154,8 @@
 		</div>
 	</div>
 	<!-- Column Image Text Container -->
-	<div class="flex flex-center">
-		<div class="col-img-text-container flex flex-row flex-center flex-wrap flex-space">
+	<div class="outer-div">
+		<div class="col-img-text-container flex flex-row flex-center flex-wrap">
 			<div class="flex flex-column">
 				<div class="col-img border-radius flex flex-center">
 					<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -202,15 +203,15 @@
 		</div>
 	</div>
 	<!-- Button Container -->
-	<div class="flex flex-center">
+	<div class="outer-div">
 		<div class="button-container flex flex-center">
 			<div class="secondary-button"></div>
 		</div>
 	</div>
 	<!-- Text Button Container -->
-	<div class="flex flex-center">
+	<div class="outer-div">
 		<div class="text-button-container">
-			<div class="text-button-block flex flex-row flex-space border-radius">
+			<div class="text-button-block flex flex-row flex-wrap">
 				<div class="button-text-area flex flex-column">
 					<div class="button-text-heading border-radius"></div>
 					<div class="small-text-area flex flex-column">
@@ -226,7 +227,7 @@
 		</div>
 	</div>
 	<!-- Contained Text -->
-	<div class="flex flex-center">
+	<div class="outer-div">
 		<div class="text-contained flex flex-center flex-column">
 			<div class="medium-text border-radius"></div>
 			<div class="text-area flex flex-column">
@@ -236,25 +237,25 @@
 		</div>
 	</div>
 	<!-- Search Container -->
-	<div class="flex flex-center">
-		<div class="search-container flex flex-center">
+	<div class="outer-div">
+		<div class="search-container flex flex-center flex-wrap">
 			<input type="text" class="search-box border-radius">
 			<div class="secondary-button"></div>
 		</div>
 	</div>
 	<!-- Profile List Container -->
-	<div class="flex flex-center">
+	<div class="outer-div">
 		<div class="profile-list-container">
-			<div class="event1 flex flex-row">
+			<div class="event1 flex flex-row flex-wrap">
 				<div class="event-text1 border-radius"></div>
 				<div class="event-text2 border-radius"></div>
 			</div>
-			<div class="event2 flex flex-row">
+			<div class="event2 flex flex-row flex-wrap">
 				<div class="time border-radius"></div>
 				<div class="event-text flex flex-column">
 					<div class="event-heading border-radius"></div>
 					<div class="speaker-container flex flex-row">
-						<div class="speaker-profile flex flex-row flex-center">
+						<div class="speaker-profile flex flex-row flex-center flex-wrap">
 							<div class="speaker-img flex flex-center">
 								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M2.625 22.5C2.625 22.5 0.75 22.5 0.75 20.625C0.75 18.75 2.625 13.125 12 13.125C21.375 13.125 23.25 18.75 23.25 20.625C23.25 22.5 21.375 22.5 21.375 22.5H2.625ZM12 11.25C13.4918 11.25 14.9226 10.6574 15.9775 9.60248C17.0324 8.54758 17.625 7.11684 17.625 5.625C17.625 4.13316 17.0324 2.70242 15.9775 1.64752C14.9226 0.592632 13.4918 0 12 0C10.5082 0 9.07742 0.592632 8.02252 1.64752C6.96763 2.70242 6.375 4.13316 6.375 5.625C6.375 7.11684 6.96763 8.54758 8.02252 9.60248C9.07742 10.6574 10.5082 11.25 12 11.25Z" fill="white"/>
@@ -265,7 +266,7 @@
 								<div class="speaker-text2 border-radius"></div>
 							</div>
 						</div>
-						<div class="speaker-profile flex flex-row flex-center">
+						<div class="speaker-profile flex flex-row flex-center flex-wrap">
 							<div class="speaker-img flex flex-center">
 								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M2.625 22.5C2.625 22.5 0.75 22.5 0.75 20.625C0.75 18.75 2.625 13.125 12 13.125C21.375 13.125 23.25 18.75 23.25 20.625C23.25 22.5 21.375 22.5 21.375 22.5H2.625ZM12 11.25C13.4918 11.25 14.9226 10.6574 15.9775 9.60248C17.0324 8.54758 17.625 7.11684 17.625 5.625C17.625 4.13316 17.0324 2.70242 15.9775 1.64752C14.9226 0.592632 13.4918 0 12 0C10.5082 0 9.07742 0.592632 8.02252 1.64752C6.96763 2.70242 6.375 4.13316 6.375 5.625C6.375 7.11684 6.96763 8.54758 8.02252 9.60248C9.07742 10.6574 10.5082 11.25 12 11.25Z" fill="white"/>
@@ -279,7 +280,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="event3 flex flex-row">
+			<div class="event3 flex flex-row flex-wrap">
 				<div class="time border-radius"></div>
 				<div class="event-text flex flex-column">
 					<div class="event3-heading border-radius"></div>
@@ -299,14 +300,14 @@
 		</div>	
 	</div>
 	<!-- Scroll Container -->
-	<div class="flex flex-center">
+	<div class="outer-div">
 		<div class="scroll-container flex flex-center flex-row">
 			<div class="container1 border-radius"></div>
 			<div class="container2 border-radius"></div>
 		</div>
 	</div>
 	<!-- Text Left Container -->
-	<div class="flex flex-center">
+	<div class="outer-div">
 		<div class="text-left-container">
 			<div class="medium-text border-radius"></div>
 			<div class="text-area flex flex-column">
@@ -316,8 +317,8 @@
 		</div>
 	</div>
 	<!-- Profile Wrap Container -->
-	<div class="flex flex-center">
-		<div class="profile-wrap-container flex flex-row flex-center flex-wrap flex-space">
+	<div class="outer-div">
+		<div class="profile-wrap-container flex flex-row flex-center flex-wrap">
 			<div class="profile-container flex flex-row">
 				<div class="speaker-img flex flex-center">
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -387,13 +388,13 @@
 		</div>
 	</div>
 	<!-- Button Container -->
-	<div class="flex flex-center">
+	<div class="outer-div">
 		<div class="button-container flex flex-center">
 			<div class="secondary-button"></div>
 		</div>
 	</div>
 	<!-- Info and Text Container -->
-	<div class="flex flex-center">
+	<div class="outer-div">
 		<div class="text-contained flex flex-center flex-column">
 			<div class="medium-text border-radius"></div>
 			<div class="text-area flex flex-column">
@@ -402,6 +403,297 @@
 			</div>
 		</div>
 	</div>
-	<!-- 50% WebPage Completed -->
+	<!-- Column Container -->
+	<div class="outer-div">
+		<div class="profile-column-container flex flex-row flex-center flex-wrap">
+			<div class="profile-column-img flex">
+				<div class="profile-speaker-img flex flex-center">
+					<svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2.625 22.5C2.625 22.5 0.75 22.5 0.75 20.625C0.75 18.75 2.625 13.125 12 13.125C21.375 13.125 23.25 18.75 23.25 20.625C23.25 22.5 21.375 22.5 21.375 22.5H2.625ZM12 11.25C13.4918 11.25 14.9226 10.6574 15.9775 9.60248C17.0324 8.54758 17.625 7.11684 17.625 5.625C17.625 4.13316 17.0324 2.70242 15.9775 1.64752C14.9226 0.592632 13.4918 0 12 0C10.5082 0 9.07742 0.592632 8.02252 1.64752C6.96763 2.70242 6.375 4.13316 6.375 5.625C6.375 7.11684 6.96763 8.54758 8.02252 9.60248C9.07742 10.6574 10.5082 11.25 12 11.25Z" fill="white"/>
+					</svg>								
+				</div>
+			</div>
+			<div class="text-star-container flex flex-column">
+				<div class="stars">
+					<svg width="240" height="48" viewBox="0 0 240 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M22.0979 5.8541C22.6966 4.01148 25.3034 4.01148 25.9021 5.8541L28.9393 15.2016C29.2071 16.0257 29.975 16.5836 30.8414 16.5836H40.67C42.6074 16.5836 43.413 19.0628 41.8456 20.2016L33.8941 25.9787C33.1931 26.488 32.8998 27.3907 33.1675 28.2148L36.2047 37.5623C36.8034 39.4049 34.6945 40.9372 33.127 39.7984L25.1756 34.0213C24.4746 33.512 23.5254 33.512 22.8244 34.0213L14.873 39.7984C13.3055 40.9372 11.1966 39.4049 11.7953 37.5623L14.8325 28.2148C15.1002 27.3907 14.8069 26.488 14.1059 25.9787L6.15444 20.2016C4.58701 19.0628 5.39257 16.5836 7.33001 16.5836H17.1586C18.025 16.5836 18.7929 16.0257 19.0607 15.2016L22.0979 5.8541Z" fill="#B8CFFF"/>
+						<path d="M70.0979 5.8541C70.6966 4.01148 73.3034 4.01148 73.9021 5.8541L76.9393 15.2016C77.2071 16.0257 77.975 16.5836 78.8414 16.5836H88.67C90.6074 16.5836 91.413 19.0628 89.8456 20.2016L81.8941 25.9787C81.1931 26.488 80.8998 27.3907 81.1675 28.2148L84.2047 37.5623C84.8034 39.4049 82.6945 40.9372 81.127 39.7984L73.1756 34.0213C72.4746 33.512 71.5254 33.512 70.8244 34.0213L62.873 39.7984C61.3055 40.9372 59.1966 39.4049 59.7953 37.5623L62.8325 28.2148C63.1002 27.3907 62.8069 26.488 62.1059 25.9787L54.1544 20.2016C52.587 19.0628 53.3926 16.5836 55.33 16.5836H65.1586C66.025 16.5836 66.7929 16.0257 67.0607 15.2016L70.0979 5.8541Z" fill="#B8CFFF"/>
+						<path d="M118.098 5.8541C118.697 4.01148 121.303 4.01148 121.902 5.8541L124.939 15.2016C125.207 16.0257 125.975 16.5836 126.841 16.5836H136.67C138.607 16.5836 139.413 19.0628 137.846 20.2016L129.894 25.9787C129.193 26.488 128.9 27.3907 129.168 28.2148L132.205 37.5623C132.803 39.4049 130.694 40.9372 129.127 39.7984L121.176 34.0213C120.475 33.512 119.525 33.512 118.824 34.0213L110.873 39.7984C109.306 40.9372 107.197 39.4049 107.795 37.5623L110.832 28.2148C111.1 27.3907 110.807 26.488 110.106 25.9787L102.154 20.2016C100.587 19.0628 101.393 16.5836 103.33 16.5836H113.159C114.025 16.5836 114.793 16.0257 115.061 15.2016L118.098 5.8541Z" fill="#B8CFFF"/>
+						<path d="M166.098 5.8541C166.697 4.01148 169.303 4.01148 169.902 5.8541L172.939 15.2016C173.207 16.0257 173.975 16.5836 174.841 16.5836H184.67C186.607 16.5836 187.413 19.0628 185.846 20.2016L177.894 25.9787C177.193 26.488 176.9 27.3907 177.168 28.2148L180.205 37.5623C180.803 39.4049 178.694 40.9372 177.127 39.7984L169.176 34.0213C168.475 33.512 167.525 33.512 166.824 34.0213L158.873 39.7984C157.306 40.9372 155.197 39.4049 155.795 37.5623L158.832 28.2148C159.1 27.3907 158.807 26.488 158.106 25.9787L150.154 20.2016C148.587 19.0628 149.393 16.5836 151.33 16.5836H161.159C162.025 16.5836 162.793 16.0257 163.061 15.2016L166.098 5.8541Z" fill="#B8CFFF"/>
+						<path d="M214.098 5.8541C214.697 4.01148 217.303 4.01148 217.902 5.8541L220.939 15.2016C221.207 16.0257 221.975 16.5836 222.841 16.5836H232.67C234.607 16.5836 235.413 19.0628 233.846 20.2016L225.894 25.9787C225.193 26.488 224.9 27.3907 225.168 28.2148L228.205 37.5623C228.803 39.4049 226.694 40.9372 225.127 39.7984L217.176 34.0213C216.475 33.512 215.525 33.512 214.824 34.0213L206.873 39.7984C205.306 40.9372 203.197 39.4049 203.795 37.5623L206.832 28.2148C207.1 27.3907 206.807 26.488 206.106 25.9787L198.154 20.2016C196.587 19.0628 197.393 16.5836 199.33 16.5836H209.159C210.025 16.5836 210.793 16.0257 211.061 15.2016L214.098 5.8541Z" fill="#B8CFFF"/>
+					</svg>					
+				</div>
+				<div class="star-text-container flex flex-column ">
+					<div class="star-text1 border-radius"></div>
+					<div class="star-text2 border-radius"></div>
+					<div class="star-text3 border-radius"></div>
+				</div>
+				<div class="name-container flex flex-column">
+					<div class="name-heading border-radius"></div>
+					<div class="name-text border-radius"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Slider -->
+	<div class="outer-div">
+		<div class="slider-container flex flex-row flex-center">
+			<div class="icon1"></div>
+			<div class="icon2"></div>
+			<div class="icon2"></div>
+		</div>
+	</div>
+	<!-- Info and Text Container -->
+	<div class="outer-div">
+		<div class="text-contained flex flex-center flex-column">
+			<div class="medium-text border-radius"></div>
+			<div class="text-area flex flex-column">
+				<div class="text-area1 border-radius"></div>
+				<div class="text-area2 border-radius"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Column Text -->
+	<div class="outer-div">
+		<div class="column-text-container flex flex-row flex-center flex-wrap">
+			<div class="block1 flex flex-column">
+				<div class="big-heading border-radius"></div>
+				<div class="column-text-heading border-radius"></div>
+				<div class="three-text-area flex flex-column">
+					<div class="text-one border-radius"></div>
+					<div class="text-two border-radius"></div>
+					<div class="text-three border-radius"></div>
+				</div>
+				<div class="secondary-button"></div>
+			</div>
+			<div class="block2 flex flex-column">
+				<div class="big-heading2 border-radius"></div>
+				<div class="column-text-heading border-radius"></div>
+				<div class="three-text-area flex flex-column">
+					<div class="text-one-uniq border-radius"></div>
+					<div class="text-two-uniq border-radius"></div>
+					<div class="text-three-uniq border-radius"></div>
+				</div>
+				<div class="secondary-button-uniq"></div>
+			</div>
+			<div class="block1 flex flex-column">
+				<div class="big-heading border-radius"></div>
+				<div class="column-text-heading border-radius"></div>
+				<div class="three-text-area flex flex-column">
+					<div class="text-one border-radius"></div>
+					<div class="text-two border-radius"></div>
+					<div class="text-three border-radius"></div>
+				</div>
+				<div class="secondary-button"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Scroll Container -->
+	<div class="outer-div">
+		<div class="scroll-container flex flex-center flex-row">
+			<div class="container1 border-radius"></div>
+			<div class="container2 border-radius"></div>
+		</div>
+	</div>
+	<!-- Text Left Container -->
+	<div class="outer-div">
+		<div class="text-left-container">
+			<div class="medium-text border-radius"></div>
+			<div class="text-area flex flex-column">
+				<div class="text-area1 border-radius"></div>
+				<div class="text-area3 border-radius"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Column List -->
+	<div class="outer-div">
+		<div class="column-list-container flex flex-row flex-center flex-wrap">
+			<div class="column-list1 flex flex-row flex-space">
+				<div class="column-list-heading border-radius"></div>
+				<div class="column-list-icon"></div>
+			</div>
+			<div class="column-list1 flex flex-row flex-space">
+				<div class="column-list-heading-uniq border-radius"></div>
+				<div class="column-list-icon"></div>
+			</div>
+			<div class="column-list1 flex flex-row flex-space">
+				<div class="column-list-heading border-radius"></div>
+				<div class="column-list-icon"></div>
+			</div>
+			<div class="column-list1 flex flex-row flex-space">
+				<div class="column-list-heading-uniq border-radius"></div>
+				<div class="column-list-icon"></div>
+			</div>
+			<div class="column-list1 flex flex-row flex-space">
+				<div class="column-list-heading border-radius"></div>
+				<div class="column-list-icon"></div>
+			</div>
+			<div class="column-list1 flex flex-row flex-space">
+				<div class="column-list-heading-uniq border-radius"></div>
+				<div class="column-list-icon"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Scroll Container -->
+	<div class="outer-div">
+		<div class="scroll-container flex flex-center flex-row">
+			<div class="container1 border-radius"></div>
+			<div class="container2 border-radius"></div>
+		</div>
+	</div>
+	<!-- Centered Text -->
+	<div class="outer-div">
+		<div class="centered-text-container flex flex-column flex-center">
+			<div class="centered-text1 border-radius"></div>
+			<div class="centered-text2 border-radius"></div>
+		</div>
+	</div>
+	<!-- Logo Container -->
+	<div class="outer-div">
+		<div class="logo-container flex flex-center flex-row flex-wrap">
+			<div class="logo-heading border-radius"></div>
+			<div class="logo-heading border-radius"></div>
+			<div class="logo-heading border-radius"></div>
+		</div>
+	</div>
+	<!-- Scroll Container -->
+	<div class="outer-div">
+		<div class="scroll-container flex flex-center flex-row">
+			<div class="container1 border-radius"></div>
+			<div class="container2 border-radius"></div>
+		</div>
+	</div>
+	<!-- Text Button Container -->
+	<div class="outer-div">
+		<div class="text-button-container-one flex flex-row flex-space flex-wrap">
+			<div class="flex flex-column">
+				<div class="medium-text border-radius"></div>
+				<div class="text-area flex flex-column">
+					<div class="text-area1 border-radius"></div>
+					<div class="text-area3 border-radius"></div>
+				</div>
+			</div>
+			<div class="button-area flex">
+				<div class="secondary-button"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Column Image Container -->
+	<div class="outer-div">
+		<div class="column-image-container flex flex-row flex-center flex-wrap">
+			<div class="column-image-container-one">
+				<div class="col-img border-radius flex flex-center">
+					<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z" fill="white"/>
+					</svg>				
+				</div>
+				<div class="column-image-info">
+					<div class="column-heading1 border-radius"></div>
+					<div class="column-heading2 border-radius"></div>
+					<div class="author flex flex-row flex-center flex-space">
+						<div class="image-column flex flex-center">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.625 22.5C2.625 22.5 0.75 22.5 0.75 20.625C0.75 18.75 2.625 13.125 12 13.125C21.375 13.125 23.25 18.75 23.25 20.625C23.25 22.5 21.375 22.5 21.375 22.5H2.625ZM12 11.25C13.4918 11.25 14.9226 10.6574 15.9775 9.60248C17.0324 8.54758 17.625 7.11684 17.625 5.625C17.625 4.13316 17.0324 2.70242 15.9775 1.64752C14.9226 0.592632 13.4918 0 12 0C10.5082 0 9.07742 0.592632 8.02252 1.64752C6.96763 2.70242 6.375 4.13316 6.375 5.625C6.375 7.11684 6.96763 8.54758 8.02252 9.60248C9.07742 10.6574 10.5082 11.25 12 11.25Z" fill="white"/>
+							</svg>
+						</div>
+						<div class="column-image-text1 border-radius"></div>
+						<div class="column-image-text2 border-radius"></div>
+					</div>
+				</div>
+			</div>
+			<div class="column-image-container-one">
+				<div class="col-img border-radius flex flex-center">
+					<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M42.3638 14.0625C42.3638 17.7921 40.8822 21.369 38.2449 24.0062C35.6077 26.6434 32.0309 28.125 28.3013 28.125C24.5716 28.125 20.9948 26.6434 18.3576 24.0062C15.7203 21.369 14.2388 17.7921 14.2388 14.0625C14.2388 10.3329 15.7203 6.75604 18.3576 4.11881C20.9948 1.48158 24.5716 0 28.3013 0C32.0309 0 35.6077 1.48158 38.2449 4.11881C40.8822 6.75604 42.3638 10.3329 42.3638 14.0625ZM66.1294 36.8606C65.6019 36.5964 65.0046 36.5047 64.4222 36.5986C63.8397 36.6925 63.3015 36.9672 62.8838 37.3838L42.015 63.8775L27.0525 48.285C26.5123 47.9253 25.8643 47.7636 25.2184 47.8271C24.5725 47.8907 23.9685 48.1757 23.5087 48.6338L3 73.125V84.375C3 85.8668 3.59263 87.2976 4.64752 88.3525C5.70242 89.4074 7.13316 90 8.625 90H87.375C88.1137 90 88.8451 89.8545 89.5276 89.5718C90.2101 89.2891 90.8301 88.8748 91.3525 88.3525C91.8748 87.8301 92.2891 87.2101 92.5718 86.5276C92.8545 85.8451 93 85.1137 93 84.375V59.0625L66.1294 36.8606Z" fill="white"/>
+					</svg>				
+				</div>
+				<div class="column-image-info">
+					<div class="column-heading1 border-radius"></div>
+					<div class="column-heading2 border-radius"></div>
+					<div class="author flex flex-row flex-center flex-space">
+						<div class="image-column flex flex-center">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.625 22.5C2.625 22.5 0.75 22.5 0.75 20.625C0.75 18.75 2.625 13.125 12 13.125C21.375 13.125 23.25 18.75 23.25 20.625C23.25 22.5 21.375 22.5 21.375 22.5H2.625ZM12 11.25C13.4918 11.25 14.9226 10.6574 15.9775 9.60248C17.0324 8.54758 17.625 7.11684 17.625 5.625C17.625 4.13316 17.0324 2.70242 15.9775 1.64752C14.9226 0.592632 13.4918 0 12 0C10.5082 0 9.07742 0.592632 8.02252 1.64752C6.96763 2.70242 6.375 4.13316 6.375 5.625C6.375 7.11684 6.96763 8.54758 8.02252 9.60248C9.07742 10.6574 10.5082 11.25 12 11.25Z" fill="white"/>
+							</svg>
+						</div>
+						<div class="column-image-text1 border-radius"></div>
+						<div class="column-image-text2 border-radius"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Subscribe Blog Container -->
+	<div class="outer-div">
+		<div class="subscribe-blog-container flex flex-center">
+			<div class="subscribe-blog flex flex-center flex-row flex-wrap">
+				<div class="subscribe-text-area flex flex-column">
+					<div class="subscribe-text1 border-radius"></div>
+					<div class="subscribe-text2 border-radius"></div>
+				</div>
+				<div class="search-container-one flex flex-center flex-wrap">
+					<input type="text" class="search-box border-radius">
+					<div class="secondary-button"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Centered Text -->
+	<div class="outer-div">
+		<div class="centered-text-container flex flex-column flex-center">
+			<div class="centered-text1 border-radius"></div>
+			<div class="centered-text2 border-radius"></div>
+		</div>
+	</div>
+	<!-- Input Container -->
+	<div class="outer-div">
+		<div class="input-container flex flex-column flex-center">
+			<input type="text" class="search-one border-radius">
+			<div class="search-div">
+				<input type="text" class="search-two border-radius">
+				<span class="icon">
+					<!-- <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
+						<path d="M11.419 9.20681C10.5847 10.1701 10.1676 10.6518 9.67231 10.8286C9.23753 10.9837 8.76247 10.9837 8.32769 10.8286C7.83241 10.6518 7.41529 10.1701 6.58103 9.20681L3.1932 5.29489C1.73543 3.6116 1.00654 2.76995 0.986303 2.05673C0.968716 1.43695 1.23958 0.84406 1.7196 0.451612C2.27199 0 3.38539 0 5.61218 0H12.3878C14.6146 0 15.728 0 16.2804 0.451612C16.7604 0.84406 17.0313 1.43695 17.0137 2.05673C16.9935 2.76995 16.2646 3.6116 14.8068 5.29489L11.419 9.20681Z" fill="#4785FF"/>
+					</svg>	
+				</span>
+			</div>
+			<input type="text" class="search-three border-radius">
+			<div class="button"></div>
+		</div>
+	</div>	
+	<!-- Text Button Container -->
+	<div class="outer-div">
+		<div class="text-button-container">
+			<div class="text-button-block flex flex-row flex-wrap">
+				<div class="button-text-area flex flex-column">
+					<div class="button-text-heading border-radius"></div>
+					<div class="small-text-area flex flex-column">
+						<div class="small-text1 border-radius"></div>
+						<div class="small-text2 border-radius"></div>
+					</div>
+				</div>
+				<div class="button-button-area flex flex-row flex-center">
+					<div class="secondary-button"></div>
+					<div class="button"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<div class="footer-div">
+		<div class="footer flex flex-center">
+			<svg class="logo" width="148" height="32" viewBox="0 0 148 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M29.8537 0.444444C30.1839 0.444444 30.4691 0.562963 30.7092 0.8C30.9494 1.03704 31.0695 1.31852 31.0695 1.64444V8.4C31.0695 8.72593 30.9494 9.00741 30.7092 9.24445C30.4691 9.48148 30.1839 9.6 29.8537 9.6H12.1576V12.4444H26.9269C27.2571 12.4444 27.5423 12.563 27.7824 12.8C28.0226 13.037 28.1426 13.3185 28.1426 13.6444V20.3556C28.1426 20.6815 28.0226 20.963 27.7824 21.2C27.5423 21.437 27.2571 21.5556 26.9269 21.5556H12.1576V30.3556C12.1576 30.6815 12.0375 30.963 11.7974 31.2C11.5572 31.437 11.2721 31.5556 10.9419 31.5556H1.21576C0.885555 31.5556 0.600376 31.437 0.360226 31.2C0.120075 30.963 0 30.6815 0 30.3556V1.64444C0 1.31852 0.120075 1.03704 0.360226 0.8C0.600376 0.562963 0.885555 0.444444 1.21576 0.444444H29.8537Z" fill="#4785FF"/>
+				<path d="M67.5698 22.4444C67.9 22.4444 68.1851 22.563 68.4253 22.8C68.6654 23.037 68.7855 23.3185 68.7855 23.6444V30.3556C68.7855 30.6815 68.6654 30.963 68.4253 31.2C68.1851 31.437 67.9 31.5556 67.5698 31.5556H41.2733C40.9431 31.5556 40.6579 31.437 40.4177 31.2C40.1776 30.963 40.0575 30.6815 40.0575 30.3556V1.64444C40.0575 1.31852 40.1776 1.03704 40.4177 0.8C40.6579 0.562963 40.9431 0.444444 41.2733 0.444444H50.9994C51.3296 0.444444 51.6148 0.562963 51.8549 0.8C52.0951 1.03704 52.2151 1.31852 52.2151 1.64444V22.4444H67.5698Z" fill="#4785FF"/>
+				<path d="M107.897 18.7111C107.897 23.2444 106.366 26.5926 103.305 28.7556C100.273 30.9185 96.2201 32 91.147 32C86.0738 32 82.0062 30.9185 78.9443 28.7556C75.9124 26.5926 74.3965 23.2148 74.3965 18.6222V13.3778C74.3965 10.3556 75.1169 7.85185 76.5578 5.86667C78.0287 3.85185 80.025 2.37037 82.5466 1.42222C85.0681 0.474074 87.9349 0 91.147 0C94.359 0 97.2108 0.474074 99.7023 1.42222C102.224 2.37037 104.22 3.83704 105.691 5.82222C107.162 7.80741 107.897 10.2963 107.897 13.2889V18.7111ZM86.5541 19.5556C86.5541 20.7704 86.9593 21.7037 87.7698 22.3556C88.6104 23.0074 89.7361 23.3333 91.147 23.3333C92.5578 23.3333 93.6685 23.0074 94.479 22.3556C95.3196 21.6741 95.7398 20.7259 95.7398 19.5111V12.4889C95.7398 11.2741 95.3196 10.3407 94.479 9.68889C93.6685 9.00741 92.5578 8.66667 91.147 8.66667C89.7361 8.66667 88.6104 8.99259 87.7698 9.64444C86.9593 10.2963 86.5541 11.2296 86.5541 12.4444V19.5556Z" fill="#4785FF"/>
+				<path d="M125.441 30.3556C125.351 30.6222 125.126 30.8889 124.765 31.1556C124.435 31.4222 124 31.5556 123.46 31.5556H117.156C116.585 31.5556 116.105 31.3926 115.715 31.0667C115.355 30.7111 115.144 30.3111 115.084 29.8667L111.167 1.55556V1.42222C111.167 1.15556 111.257 0.933334 111.437 0.755556C111.647 0.548148 111.887 0.444444 112.158 0.444444H119.902C120.503 0.444444 120.983 0.622222 121.343 0.977778C121.734 1.33333 121.959 1.77778 122.019 2.31111L123.46 15.9111L126.071 8.84444C126.161 8.54815 126.371 8.26667 126.702 8C127.062 7.7037 127.512 7.55556 128.053 7.55556H131.114C131.655 7.55556 132.09 7.7037 132.42 8C132.78 8.26667 133.006 8.54815 133.096 8.84444L135.707 15.9111L137.148 2.31111C137.208 1.77778 137.418 1.33333 137.779 0.977778C138.169 0.622222 138.664 0.444444 139.265 0.444444H147.009C147.28 0.444444 147.505 0.548148 147.685 0.755556C147.895 0.933334 148 1.15556 148 1.42222V1.55556L144.083 29.8667C144.023 30.3111 143.797 30.7111 143.407 31.0667C143.047 31.3926 142.582 31.5556 142.011 31.5556H135.707C135.167 31.5556 134.717 31.4222 134.356 31.1556C134.026 30.8889 133.816 30.6222 133.726 30.3556L129.583 20.9778L125.441 30.3556Z" fill="#4785FF"/>
+			</svg>
+			<div class="menu-uniq flex flex-row">
+				<div class="text-one"></div>
+				<div class="text-two"></div>
+				<div class="text-three"></div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
