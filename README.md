@@ -33,4 +33,4 @@ By adhering to this structure, we can easily track and review your daily task su
 - Kaveri - NA
 - Kiran - NA
 - [Prathmesh](https://xscientisttech.github.io/Frontend-2023/Prathmesh_Patil/task-1/index.html)
-- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj shinde/task-1/card.html)
+- [Suraj](`https://xscientisttech.github.io/Frontend-2023/suraj shinde/task-1/card.html`)
