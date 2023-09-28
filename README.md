@@ -22,15 +22,15 @@ By adhering to this structure, we can easily track and review your daily task su
 `https://xscientisttech.github.io/Frontend-2023/[folder_structure]/index.html`
 
 *** Task01 ***
-[Jayesh](https://xscientisttech.github.io/Frontend-2023/Jayesh/Task1/index.html)
-[Kaveri](https://xscientisttech.github.io/Frontend-2023/kaveri/Task1/index.html)
-[Kiran](https://xscientisttech.github.io/Frontend-2023/kiran/Task1/index.html)
-[Prathmesh](https://xscientisttech.github.io/Frontend-2023/Prathmesh_Patil/task-1/card.html)
-Suraj - NA
+- [Jayesh](https://xscientisttech.github.io/Frontend-2023/Jayesh/Task1/index.html)
+- [Kaveri](https://xscientisttech.github.io/Frontend-2023/kaveri/Task1/index.html)
+- [Kiran](https://xscientisttech.github.io/Frontend-2023/kiran/Task1/index.html)
+- [Prathmesh](https://xscientisttech.github.io/Frontend-2023/Prathmesh_Patil/task-1/card.html)
+- Suraj - NA
 
 *** Task02 ***
-[Jayesh](https://xscientisttech.github.io/Frontend-2023/Jayesh/Task2/index.html)
-Kaveri - NA
-Kiran - NA
-[Prathmesh](https://xscientisttech.github.io/Frontend-2023/Prathmesh_Patil/task-1/index.html)
-[Suraj](https://xscientisttech.github.io/Frontend-2023/suraj shinde/task-1/card.html)
+- [Jayesh](https://xscientisttech.github.io/Frontend-2023/Jayesh/Task2/index.html)
+- Kaveri - NA
+- Kiran - NA
+- [Prathmesh](https://xscientisttech.github.io/Frontend-2023/Prathmesh_Patil/task-1/index.html)
+- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj shinde/task-1/card.html)
