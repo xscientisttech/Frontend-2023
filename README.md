@@ -18,3 +18,6 @@ Here's a breakdown of the structure:
         - Place all files related to a specific task inside its corresponding subdirectory.
 
 By adhering to this structure, we can easily track and review your daily task submissions. Thank you for your cooperation!
+
+
+[Jayesh - Task01](https://xscientisttech.github.io/Frontend-2023/Jayesh/Task1/index.html)
