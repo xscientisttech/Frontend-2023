@@ -27,10 +27,11 @@ By adhering to this structure, we can easily track and review your daily task su
 - [Kiran](https://xscientisttech.github.io/Frontend-2023/kiran/Task1/index.html)
 - [Prathmesh](https://xscientisttech.github.io/Frontend-2023/Prathmesh_Patil/task-1/card.html)
 - Suraj - NA
+- [subodh](https://github.com/xscientisttech/Frontend-2023/blob/main/subodh/Task%2001/index.html)
 
 ### Task02
 - [Jayesh](https://xscientisttech.github.io/Frontend-2023/Jayesh/Task2/index.html)
 - Kaveri - NA
 - Kiran - NA
 - [Prathmesh](https://xscientisttech.github.io/Frontend-2023/Prathmesh_Patil/task-1/index.html)
-- [Suraj](`https://xscientisttech.github.io/Frontend-2023/suraj shinde/task-1/card.html`)
+- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj shinde/task-1/card.html)
