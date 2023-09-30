@@ -46,6 +46,7 @@ body{
     border-radius: 20px 20px 0 0;
     /* margin: 5%; */
 }
+
 .head .right{
     align-items: center;
     display: flex;
@@ -62,8 +63,6 @@ body{
 }
 
 .card-body{
-    /* width: 100%; */
-    /* background-color: #EBEBEB; */
     padding: 4%;
     display: flex;
     flex-direction: column;
@@ -74,11 +73,14 @@ body{
 .card{
     border-radius: 3px;
     background-color: #fff;
-    padding: 50px;
-    width: 50%;
+    padding: 20px;
+    width: 100%;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin: 40px;
+    margin-bottom: 0;
 }
 
 .card h4{
@@ -94,8 +96,8 @@ body{
     border: none;
     background-color: #ebebeb5b;
     height: 50px;
-    
 }
+
 .card input::placeholder{
     color: #888888ab;
 }
@@ -110,7 +112,6 @@ body{
 .card ul li:first-child{
     margin-top: 0;
 }
-
 
 .card img {
     vertical-align: middle;
@@ -130,6 +131,7 @@ body{
     flex-direction: row;
     gap: 20px;
 }
+
 .info{
     flex: 1;
 }
@@ -152,33 +154,6 @@ body{
     max-width: 100%;
     height: 7px;
     background-color: #ebebeb82;
-}
-
-.select{
-    /* height: 20px; */
-    width: fit-content;
-    text-align: right;
-    padding: 0px 5px;
-    color: #333333;
-    /* background-color: #eeeeee; */
-    border: 1px solid #dddddd;
-    cursor: pointer;
-    border-radius: 3px;
-
-    /* Replace default styling (arrow) */
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-
-}
-
-.select:focus,.select:hover{
-    outline: none;
-    border: 1px solid #bbbbbb;
-}
-
-.select option{
-    background-color: #fff;
 }
 
 .access{
@@ -213,14 +188,16 @@ body{
 }
 
 .card-footer{
-    width: 50%;
-    padding: 10px 50px;
+    width: 100%;
+    max-width: 450px;
+    padding: 10px 20px;
     height: 30px;
     display: flex;
     justify-content: center;
     background-color: rgb(243, 243, 243);
-    font-size: larger;
+    font-size: 1.2rem;
     color: #716f78;
+    margin-bottom: 40px;
 }
 
 .card-footer img{
