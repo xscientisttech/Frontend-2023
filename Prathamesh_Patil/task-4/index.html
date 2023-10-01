@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="registration-form">
+        <div class="left-side">
+          <div class="img1">
+            <img src="img1.png" alt="" />
+          </div>
+          <div class="img2 mt-30px">
+            <img src="img2.png" alt="" />
+          </div>
+          <p>
+            Social Media Marketing is a service for finding projects and
+            specialists
+          </p>
+        </div>
+        <div class="right-side">
+          <div class="flex data">
+            <img src="left_arrow.png" alt="" />
+            <p>Back</p>
+          </div>
+          <div class="flex_1">
+            <h1>Let's create your Account!</h1>
+            <h4 class="mt-30px">Looking for?</h4>
+            <div class="flex mt-15px">
+              <div class="box">
+                <input
+                  type="radio"
+                  name="choice"
+                  style="height: 25px; width: 25px"
+                />
+                <p>SMM</p>
+              </div>
+              <div class="box">
+                <input
+                  type="radio"
+                  name="choice"
+                  style="height: 25px; width: 25px"
+                />
+                <p>Projects</p>
+              </div>
+            </div>
+            <h4 class="mt-24px">Full Name</h4>
+            <input type="text" class="inputs mt-15px" placeholder="Full Name" />
+            <h4 class="mt-24px">Your Email</h4>
+            <input
+              type="text"
+              class="inputs mt-15px"
+              placeholder="example@gmail.com"
+            />
+            <h4 class="mt-24px">Create Password</h4>
+            <div style="position: relative">
+              <input
+                type="password"
+                class="inputs mt-15px pass"
+                placeholder="Password"
+                id="password"
+              />
+              <img src="eye_32px.png" class="eye" />
+            </div>
+            <div class="flex contentbox mt-15px">
+              <div>
+                <p id="charlength">At least 8 characters long</p>
+              </div>
+              <div>
+                <p id="charlower">1 Lowercase Letter</p>
+              </div>
+              <div>
+                <p>1 Number</p>
+              </div>
+            </div>
+            <div class="flex contentbox mt-5px">
+              <div>
+                <p id="charupper">1 Uppercase Letter</p>
+              </div>
+              <div>
+                <p>At least one special character(!@#$%^&*)</p>
+              </div>
+            </div>
+            <div class="flex mt-24px">
+              <input
+                type="checkbox"
+                name=""
+                id=""
+                style="height: 20px; width: 20px"
+              />
+              <p>
+                I agree with <span class="bg-blue">Terms</span> and
+                <span class="bg-blue">Privacy</span>
+              </p>
+            </div>
+            <button type="button" class="btn mt-24px">Create an account</button>
+            <p class="mt-15px" style="text-align: center">
+              Already have an account? <span class="bg-blue">Log in</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
