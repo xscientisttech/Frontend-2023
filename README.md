@@ -34,9 +34,10 @@ By adhering to this structure, we can easily track and review your daily task su
 - Kaveri - NA
 - Kiran - NA
 - [Prathamesh](https://xscientisttech.github.io/Frontend-2023/Prathamesh_Patil/task-2/index.html)
-- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj%20shinde/Task_2/index.html)
+- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj/Task_2/index.html)
 - [subodh](https://xscientisttech.github.io/Frontend-2023/subodh/Task%2002/index.html)
 
 
 ### Task03
 - [subodh](https://xscientisttech.github.io/Frontend-2023/subodh/Task%2003/index.html)
+- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj/Task3/index.html)
