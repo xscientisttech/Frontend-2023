@@ -3,6 +3,7 @@
     padding: 0;
     gap: 10px;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 
@@ -159,7 +160,7 @@
 
 .content .c1 .d2{
     width: 100%;
-    padding: 0 20%;
+    padding: 0 40px;
     /* height: 500px; */
     margin-top: 20px;
     gap: 50px;
@@ -243,13 +244,20 @@
     /* border: 1px solid black; */
     /* gap: 20px; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
 .content .c2 .d2 .card .circle{
-    width: 40px;
-    height: 40px;
+    /* width: 20%; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.content .c2 .d2 .card .circle span{
+    width: 50px;
+    height: 50px;
     background-color: #a1b5c2;
     border-radius: 50%;
 }
@@ -417,3 +425,14 @@
     }
 
 }
+<<<<<<< HEAD
+
+
+@media screen and (max-width: 768px){
+    .content .c1, .content .c2{
+        padding: 0;
+    }
+
+}
+=======
+>>>>>>> 017cc8a1b5a4150805df6262797f11b394cbb5dd
