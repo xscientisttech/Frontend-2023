@@ -41,6 +41,12 @@
   .flex.mt-15px {
     flex-wrap: nowrap;
   }
+
+  .eye {
+    position: absolute;
+    top: 20px;
+    left: 22rem;
+  }
 }
 
 @media screen and (max-width: 1600px) and (min-width: 1000px) {
@@ -74,6 +80,12 @@
     align-items: center;
     background-color: #d0d9f0;
   }
+
+  .eye {
+    position: absolute;
+    top: 20px;
+    left: 22rem;
+  }
 }
 @media screen and (max-width: 1000px) {
   .left-side {
@@ -91,15 +103,27 @@
   .flex_1 > h1 {
     text-align: center;
   }
+  h4 {
+    padding: 0 20px;
+  }
+
+  .eye {
+    position: absolute;
+    top: 10px;
+    left: 20rem;
+  }
 
   body {
-    height: 940px;
+    height: 980px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .inputs {
-    width: 100%;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
   .btn {
     margin-left: auto;
@@ -111,6 +135,9 @@
     width: 150px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .flex.mt-24px {
+    justify-content: center;
   }
 }
 
@@ -184,17 +211,12 @@
   min-height: auto;
 }
 
-.eye {
-  position: absolute;
-  top: 20px;
-  left: 22rem;
-}
-
 .flex.contentbox {
   column-gap: 15px;
+  justify-content: center;
 }
 .flex.contentbox > div {
-  padding: 5px 15px;
+  padding: 5px 5px;
   background-color: #ccc;
   border-radius: 16px;
   opacity: 48%;
