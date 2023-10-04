@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunnySide Agency Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <a href="#" class="navbar-brand">
+            <img src="logo.svg" alt="SunnySide Logo" />
+          </a>
+          <ul class="navbar-nav">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#Service" class="nav-link">Service</a></li>
+            <li><a href="#project" class="nav-link">Project</a></li>
+            <li><button class="btn">Contact</button></li>
+          </ul>
+          <button class="nav-toggle-btn">
+            <span class="line one"></span>
+            <span class="line two"></span>
+            <span class="line three"></span>
+          </button>
+        </nav>
+      </header>
+      <main>
+        <section class="home">
+          <picture>
+            <source
+              media="(max-width:768px)"
+              srcset="mobile/image-header.jpg"
+            />
+            <source
+              media="(min-width:769px)"
+              srcset="desktop/image-header.jpg"
+            />
+            <img
+              src="mobile/image-header.jpg"
+              alt="home banner image"
+              class="home-banner"
+              loading="lazy"
+            />
+          </picture>
+          <div class="home-absolute-content">
+            <h1 class="main-heading">We are Creative</h1>
+            <a href="#about">
+              <img
+                src="icon-arrow-down.svg"
+                alt="icon-arrow-down"
+                class="arrow-down"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </section>
+
+        <section class="about" id="about">
+          <div class="about-img-box grid-pos-lg">
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="mobile/image-transform.jpg"
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="desktop/image-transform.jpg"
+              />
+              <img
+                src="mobile/image-transform.jpg"
+                alt="about image"
+                class="about-img"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="about-content">
+            <h2 class="about-h2">Transform your brand</h2>
+            <p class="about-p">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling viuslas
+              than do most of the marketing for you
+            </p>
+            <a href="#" class="about-link yellow">Learn More</a>
+          </div>
+
+          <div class="about-img-box">
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="mobile/image-stand-out.jpg"
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="desktop/image-stand-out.jpg"
+              />
+              <img
+                src="mobile/image-stand-out.jpg"
+                alt="about image"
+                class="about-img"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="about-content">
+            <h2 class="about-h2">Stand out to the right audience</h2>
+            <p class="about-p">
+              Using a collaborative formula of designers, resarchers,
+              photographers, videographers, and copywriters, we'll build and
+              extend your brand in digital places.
+            </p>
+            <a href="#" class="about-link pink">Learn More</a>
+          </div>
+        </section>
+
+        <section class="services" id="services">
+          <div class="service-box">
+            <div class="img-box">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="mobile/image-graphic-design.jpg"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="desktop/image-graphic-design.jpg"
+                />
+                <img
+                  src="mobile/image-graphic-design.jpg"
+                  alt="Graphic Design"
+                  class="service-img"
+                />
+              </picture>
+            </div>
+
+            <div class="service-absolute-content">
+              <h3 class="service-h3 cyan">Graphic design</h3>
+              <p class="service-p cyan">
+                Great design makes you memerable, we deliver artwork that
+                underscores your brand message and captures Potential clients
+                attention.
+              </p>
+            </div>
+          </div>
+          <div class="service-box">
+            <div class="img-box">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="mobile/image-photography.jpg"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="desktop/image-photography.jpg"
+                />
+                <img
+                  src="mobile/image-photography.jpg"
+                  alt="Graphic Design"
+                  class="service-img"
+                />
+              </picture>
+            </div>
+
+            <div class="service-absolute-content">
+              <h3 class="service-h3 blue">Photography</h3>
+              <p class="service-p blue">
+                Increase your credibility by getting the most stunning,
+                high-quality photos that improve your business image.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="testimonials">
+          <h2 class="testimonials-h2">client testimonial</h2>
+          <div class="testimonials-grid">
+            <div class="testimonials-client">
+              <div class="client-img-box">
+                <img
+                  src="image-emily.jpg"
+                  alt=""
+                  class="client-img"
+                  loading="lazy"
+                />
+              </div>
+              <p class="client-text">
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+              <h2 class="client-name">Emily R.</h2>
+              <p class="client-title">Marketing Directory</p>
+            </div>
+            <div class="testimonials-client">
+              <div class="client-img-box">
+                <img
+                  src="image-thomas.jpg"
+                  alt="client thomas"
+                  class="client-img"
+                  loading="lazy"
+                />
+              </div>
+              <p class="client-text">
+                Sunnyside's enthusiasm coupled with their keen interest in our
+                brand's success made it a satisfying and enjoyable experience
+              </p>
+              <h2 class="client-name">Thomas s.</h2>
+              <p class="client-title">Chief Operating Officer</p>
+            </div>
+            <div class="testimonials-client">
+              <div class="client-img-box">
+                <img
+                  src="image-jennie.jpg"
+                  alt="client jennie"
+                  class="client-img"
+                  loading="lazy"
+                />
+              </div>
+              <p class="client-text">
+                Incredible end result! Our Sales increased over 400% when we
+                worked with sunnyside, Highly recommended!
+              </p>
+              <h2 class="client-name">Jennie F.</h2>
+              <p class="client-title">Business Owner</p>
+            </div>
+          </div>
+        </section>
+        <section class="projects" id="projects">
+          <div class="project-img-box">
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="mobile/image-gallery-milkbottles.jpg"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="desktop/image-gallery-milkbottles.jpg"
+                />
+                <img
+                  src="mobile/image-gallery-milkbottles.jpg"
+                  alt="Milk Bottles"
+                  class="project-img"
+                />
+              </picture>
+            </a>
+          </div>
+          <div class="project-img-box">
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="mobile/image-gallery-orange.jpg"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="desktop/image-gallery-orange.jpg"
+                />
+                <img
+                  src="mobile/image-gallery-orange.jpg"
+                  alt="Orange Fruit"
+                  class="project-img"
+                />
+              </picture>
+            </a>
+          </div>
+          <div class="project-img-box">
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="mobile/image-gallery-cone.jpg"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="desktop/image-gallery-cone.jpg"
+                />
+                <img
+                  src="mobile/image-gallery-cone.jpg"
+                  alt="Milk Bottles"
+                  class="project-img"
+                />
+              </picture>
+            </a>
+          </div>
+          <div class="project-img-box">
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="mobile/image-gallery-sugar-cubes.jpg"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="desktop/image-gallery-sugar-cubes.jpg"
+                />
+                <img
+                  src="mobile/image-gallery-sugar-cubes.jpg"
+                  alt="Sugar Cubes"
+                  class="project-img"
+                />
+              </picture>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-brand">
+          <svg
+            src="logo.svg"
+            alt=""
+            height="24px"
+            width="124px"
+            fill="#2B7362"
+          ></svg>
+        </div>
+        <ul class="footer-nav">
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+        </ul>
+        <div class="social-links">
+          <a href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-pinterest"></ion-icon>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const nav = document.querySelector(".navbar-nav");
+      const navtogglebtn = document.querySelector(".nav-toggle-btn");
+      const navlinks = document.querySelectorAll(".nav-link");
+
+      const navtoggleFunc = function () {
+        nav.classList.toggle("active");
+        navtogglebtn.classList.toggle("active");
+      };
+      navtogglebtn.addEventListener("click", navtoggleFunc);
+      for (let i = 0; i < navlinks.length; i++) {
+        navlinks[i].addEventListener("click", navtoggleFunc);
+      }
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
