@@ -44,5 +44,5 @@ By adhering to this structure, we can easily track and review your daily task su
 - [Prathamesh](https://xscientisttech.github.io/Frontend-2023/Prathamesh_Patil/task-3/index.html)
 
 ### Task04
-- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj/Task_2/index.html)
+- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj/Task04/index.html)
 - [Prathamesh](https://xscientisttech.github.io/Frontend-2023/Prathamesh_Patil/task-4/index.html)
