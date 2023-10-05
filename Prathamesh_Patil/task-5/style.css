@@ -165,7 +165,7 @@ header {
 }
 
 .nav-toggle-btn.active > .three {
-  transform: translatex(-4px) rotate(-45deg);
+  transform: translateY(-4px) rotate(-45deg);
 }
 
 .home {
