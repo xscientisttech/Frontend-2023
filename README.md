@@ -47,3 +47,24 @@ By adhering to this structure, we can easily track and review your daily task su
 ### Task04
 - [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj/Task04/index.html)
 - [Prathamesh](https://xscientisttech.github.io/Frontend-2023/Prathamesh_Patil/task-4/index.html)
+
+
+# Things to do before work
+## Check active Repo
+<p>
+  <img src="README/image01.PNG" width="1000px">
+</p>
+
+## Pull changes from main branch to your **branch**
+
+```
+git pull origin main
+```
+
+## Add your changes, stash them with commit and push on your **`branch`*.
+
+```
+git add . or git add -A
+git commit -m "message.."
+git push origin [branch-name]
+```
