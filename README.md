@@ -54,7 +54,6 @@ By adhering to this structure, we can easily track and review your daily task su
 - Kaveri - NA
 - Kiran - NA
 - [Prathamesh](https://xscientisttech.github.io/Frontend-2023/Prathamesh_Patil/task-2/index.html)
-- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj/Task_2/index.html)
 - [subodh](https://xscientisttech.github.io/Frontend-2023/subodh/Task%2002/index.html)
 - [Suyog](https://xscientisttech.github.io/Frontend-2023/suyog/task02/index.html)
 - [Suraj](https://xscientisttech.github.io/suraj/Task02/index.html)
@@ -63,7 +62,6 @@ By adhering to this structure, we can easily track and review your daily task su
 - [subodh](https://xscientisttech.github.io/Frontend-2023/subodh/Task%2003/index.html)
 - [Prathamesh](https://xscientisttech.github.io/Frontend-2023/Prathamesh_Patil/task-3/index.html)
 - [YogeshKadu](https://xscientisttech.github.io/Frontend-2023/YogeshKadu/task1/index.html)
-- [Suraj](https://xscientisttech.github.io/suraj/Task03/src/index.html)
 
 ### Task04
 - [Prathamesh](https://xscientisttech.github.io/Frontend-2023/Prathamesh_Patil/task-4/index.html)
