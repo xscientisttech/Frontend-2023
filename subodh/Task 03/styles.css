@@ -60,7 +60,6 @@
 
 .banner .content p{
     /* padding: 10px 20%; */
-    max-width: 1000px;
     color: #fff;
     font-size: 18px;
 }
@@ -127,8 +126,7 @@
 .services .container{
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 60px;
@@ -213,8 +211,7 @@
 
 .testimonials .container{
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
     align-items: center;
     margin-top: 40px;
     flex-wrap: wrap;
@@ -420,58 +417,6 @@
 
     .footer ul{
         margin-bottom: 30px;
-    }
-
-}
-
-
-
-@media (max-width: 480px ) {
-
-    p{
-        text-align: left;
-    }
-
-    .contentBx{
-        padding: 20px!important;
-    }
-
-    .services{
-        padding: 20px;
-    }
-
-    .services .serviceBx{
-        margin: 0!important;
-        width: 100%!important;
-    }
-
-    .technology {
-        padding: 20px;
-        padding-top: 300px;
-    }
-
-    .client {
-        padding: 20px;
-    }
-
-    .testimonials{
-        padding: 20px;
-    }
-
-    .testimonials .contentBx{
-        padding: 20px!important;
-    }
-
-    .about .contentBx{
-        padding: 30px!important;
-    }
-
-    .contact{
-        padding: 20px;
-    }
-
-    .footer {
-        padding: 20px;
     }
 
 }

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&family=Lexend:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.046875%200%200%200%200%200%200.07421875%200%200%200%200%200%200.109375%200%200%200%200%200%200.33984375%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E), radial-gradient(79% 150% at 29% 100%, rgba(135, 92, 161, 0.788) 21%, rgba(66, 95, 199, 0.69) 68%, rgba(0, 148, 255, 0.541) 100%), url(./res/bg.jpg?v=6b7aaf87);
+    background-size: 512px, cover, cover;
+    background-position: center, 0% 0%, center;
+    background-repeat: repeat, repeat, no-repeat;
+    background-color: #FFFFFF;
+}
+
+.profile {
+    width: 100%;
+    height: 100vh;
+    /* display: flex; */
+    /* align-items: center; */
+    padding: 35px;
+}
+
+.container{
+    background-color: #393847;
+    width: 400px;
+    height: fit-content;
+    border-radius: 30px;
+    /* margin-left: 50px; */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile .avatar img{
+    width: 80px;
+    border-radius: 50px;
+    border: 3px solid #896BFF;
+    padding: 4px;
+}
+
+h2{
+    font-family: 'Lexend', sans-serif;
+    font-size: 3.5em;
+    line-height: 1.125;
+    font-weight: 400;
+    margin: 20px 0;
+    color: #FFFFFF;
+}
+
+p{
+    margin: 20px 0;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font: inherit;
+}
+
+p a{
+    color: rgba(255,255,255,0.588);
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    line-height: 1.75;
+    font-weight: 400;
+    color: #AA94FF;
+    font: inherit;
+}
+
+hr{
+    margin: 20px 0;
+}
+
+.btns{
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn{
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+
+    font: inherit;
+    font-size: small;
+}
+
+.btn:nth-child(1){
+    border: solid 2px #896BFF;
+}
+
+.btn:nth-child(2){
+    border: solid 2px #776BFF;
+}
+
+.btn:nth-child(3){
+    border: solid 2px #6B83FF;
+}
+
+.btn:nth-child(4){
+    border: solid 2px #6B9DFF;
+}
+
+.btn:nth-child(5){
+    border: solid 2px #6BC1FF;
+}
+
+.fa-twitter{
+    color: #896BFF;
+}
+
+.fa-instagram{
+    color: #776BFF;
+}
+
+.fa-pinterest{
+    color: #6B83FF;
+}
+
+.fa-tiktok{
+    color: #6B9DFF;
+}
+
+.fa-reddit{
+    color: #6BC1FF;
+}
+
+.footer{
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .ic{
+    text-align: center;
+}
+
+.footer .ic i{
+    width: 45px;
+    aspect-ratio: 1;
+    border: 2px solid blue;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .fa{
+    /* display: inline-block!important; */
+    display: flex;
+    color: white;
+}
+
+.fa::before{
+    width: 100%;
+}
+
+.ic:nth-child(1) i{
+    border: solid 2px #896BFF;
+    color: #896BFF;
+}
+
+.ic:nth-child(2) i{
+    border: solid 2px #776BFF;
+    color: #776BFF;
+}
+
+.ic:nth-child(3) i{
+    border: solid 2px #6B83FF;
+    color: #6B83FF;
+}
+
+.ic:nth-child(4) i{
+    border: solid 2px #6B9DFF;
+    color: #6B9DFF;
+}
+
+.ic:nth-child(5) i{
+    border: solid 2px #6BC1FF;
+    color: #6BC1FF;
+}
+
+hr{
+    width: 400px;
+    height: 0.2px;
+    color: #ebebeb61;
+    margin-left: -50px;
+}
+
+
+@media screen and (max-width : 600px) {
+    .profile {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .profile .container{
+        width: 80%;
+    }
+
+    .btn{
+        flex: 1;
+    }
+}
