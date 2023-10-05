@@ -229,9 +229,11 @@ blockquote{
 }
 .cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 4rem auto;
     gap: 5rem;
+    align-items: center;
+    flex-wrap: wrap;
 
 }
 
@@ -239,6 +241,10 @@ blockquote{
     cursor: pointer;
     transition: all 0.4s ease;
 
+}
+.cards .card-container{
+    flex:1;
+    flex-basis: 200px;
 }
 .cards .card-container .img-holder{
     max-width: 100%;
