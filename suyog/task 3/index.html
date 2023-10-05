@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+    .main {
+            background:url("img/wall-modified.png")
+        }
+  </style>
+</head>
+
+<body>
+
+    <!--       main       -->
+    <div class="main bg-cover bg-no-repeat w-full h-screen  p-6 flex justify-center items-center md:min-h-screen">
+
+        <!--     container   -->
+        <div class="py-12 px-12  rounded-2xl  w-full max-w-5xl bg-white/20 shadow-2xl ">
+
+            <!-- text-block -->
+            <div class="">
+                <div class="w-full flex flex-wrap justify-center">
+                    <h1 class="text-center text-white/90 tracking-wide font-semibold text-2xl">Choose Your Plan </h1>
+                </div>
+                <div class="mx-auto w-full pt-2 text-center text-white/90 text-sm">
+                    <p>Sign up in less than 30 seconds. Try out our 7 days risk free trial <br>upgrade at anytime, no
+                        question, no hastle.</p>
+                </div>
+            </div>
+
+            <!-- card block -->
+            <div class="pt-14 flex place-content-evenly items-center flex-col gap-10 flex-wrap   md:gap-10 md:flex-row">
+
+                <!-- card-1 -->
+                <div
+                    class="md:w-64 md:h-[350px]  w-[14rem]  h-[340px] bg-white/20 rounded-2xl  text-white flex flex-col items-center gap-4 ">
+                    <div class="pt-4">
+                        <h2 class="text-lg font-semibold tracking-wider">Free</h2>
+                    </div>
+                    <div class="">
+                        <p class="text-base font-semibold">$<span class="text-3xl font-semibold ">0</span>
+                            <span>/mo</span>
+                        </p>
+                    </div>
+                    <div class="text-xs flex col gap-2 pt-3">
+                        <div class="flex flex-col gap-4">
+                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="flex flex-col gap-3 ">
+                            <p>Up to 100 emails free per day</p>
+                            <p>Unlimited contacts</p>
+                        </div>
+                    </div>
+                    <div class="font-semibold pt-20 ">
+                        <button class="text-base w-36 h-10 rounded-md  border-white/90 border-2"> Sign up </button>
+                    </div>
+                </div>
+
+                <!-- card-2 -->
+                <div
+                    class="md:w-80 md:h-[430px] w-[16rem] h-[410px] bg-white/30 rounded-2xl text-white flex flex-col  items-center gap-6">
+                    <div class="">
+                        <img width="120px" src="img/best value.png" alt="">
+                    </div>
+                    <div class="font-semibold tracking-wider">
+                        <h2 class="text-xl">Standard</h2>
+                    </div>
+                    <div class="">
+                        <p class="text-base font-semibold">$<span class="text-3xl font-bold ">99</span>
+                            <span>/mo</span>
+                        </p>
+                    </div>
+                    <div class="text-xs flex col gap-2">
+                        <div class="flex flex-col gap-4">
+                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="flex flex-col gap-3 ">
+                            <p>Up to 1000,00 emails free per day</p>
+                            <p>No daily limits</p>
+                            <p>Email support</p>
+                        </div>
+                    </div>
+                    <div class="font-semibold pt-14">
+                        <button class="text-base w-44 h-12 rounded-md  border-white/90 border-2"> Sign up </button>
+                    </div>
+                </div>
+
+                <!-- card-3 -->
+                <div
+                    class="md:w-64 md:h-[350px]  w-[14rem] h-[340px] bg-white/30 rounded-2xl  text-white flex flex-col  items-center gap-4">
+                    <div class="pt-4">
+                        <h2 class=" text-lg font-semibold tracking-wider">Enterprice</h2>
+                    </div>
+                    <div class="">
+                        <p class="text-base font-semibold">$<span class="text-3xl font-semibold ">399</span>
+                            <span>/mo</span>
+                        </p>
+                    </div>
+                    <div class="text-xs flex col gap-2">
+                        <div class="flex flex-col gap-4">
+                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="flex flex-col gap-3 ">
+                            <p>Up to 1,000,00 emails free per day</p>
+                            <p>marketing automation</p>
+                            <p>Landing pages</p>
+                            <p>Telephone support</p>
+                        </div>
+                    </div>
+                    <div class="font-semibold pt-9">
+                        <button class="text-base w-36 h-10 rounded-md  border-white/90 border-2"> Sign up </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
