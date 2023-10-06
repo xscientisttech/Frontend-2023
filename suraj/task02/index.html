@@ -9,8 +9,8 @@
     />
     <title>Document</title>
   </head>
-  <body style="background-color: #f1f5ff">
-    <div class="py-4" style="background-color: #b9cfff">
+  <body style="background-color: #f1f5ff" class="w-full">
+    <div class="py-4 w-full" style="background-color: #b9cfff">
       <div class="container mx-auto flex items-center">
         <div class="w-4 h-4 bg-white rounded-full mr-2"></div>
         <div class="w-4 h-4 bg-white rounded-full mr-2"></div>
@@ -18,13 +18,13 @@
       </div>
     </div>
 
-    <nav class="p-4 ml-16 flex justify-center items-center">
+    <nav class="p-4 flex justify-center items-center w-full flex-wrap">
       <div class="container mx-auto flex justify-between items-center">
-        <h1 class="text-white text-2xl font-bold" style="color: #4685fe">
+        <h1 class="text-white text-2xl font-bold flex justify-start item-start" style="color: #4685fe">
           FLOW
         </h1>
 
-        <ul class="flex space-x-6">
+        <ul class="flex space-x-6 justify-center items-center flex-wrap">
           <li>
             <div
               class="w-16 h-3 rounded-md"
@@ -46,7 +46,7 @@
         </ul>
 
         <!-- Sign In and Sign Up Buttons -->
-        <div class="flex space-x-4 mr-20">
+        <div class="flex space-x-4 justify-end items-end flex-wrap">
           <button
             class="px-10 py-3 rounded-xl border-2"
             style="border-color: #4685fe"
@@ -61,7 +61,7 @@
     </nav>
 
     <div class="pt-40">
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center flex-wrap">
         <div
           class="w-72 h-10 rounded-md"
           style="background-color: #b9cfff"
@@ -87,39 +87,39 @@
           </div>
         </ul>
       </div>
-      <div class="flex justify-center items-center pt-8">
+      <div class="flex justify-center items-center pt-8 flex-wrap" >
         <button
           class="w-24 h-8 rounded-xl border-2"
           style="border-color: #759eef"
         ></button>
         <button
-          class="w-24 h-8 rounded-xl border-2 ml-6"
+          class="w-24 h-8 rounded-xl border-2 m-6"
           style="background-color: #759eef; border-color: #759eef"
         ></button>
       </div>
     </div>
 
     <div class="pt-40">
-      <ul class="flex space-x-16 justify-center items-center">
-        <li>
+      <ul class="flex justify-center items-center flex-wrap">
+        <li class="p-4">
           <div
             class="w-28 h-10 rounded-md"
             style="background-color: #d6e4ff"
           ></div>
         </li>
-        <li>
+        <li class="p-4">
+          <div 
+            class="w-28 h-10 rounded-md"
+            style="background-color: #d6e4ff"
+          ></div>
+        </li>
+        <li class="p-4">
           <div
             class="w-28 h-10 rounded-md"
             style="background-color: #d6e4ff"
           ></div>
         </li>
-        <li>
-          <div
-            class="w-28 h-10 rounded-md"
-            style="background-color: #d6e4ff"
-          ></div>
-        </li>
-        <li>
+        <li class="p-4">
           <div
             class="w-28 h-10 rounded-md"
             style="background-color: #d6e4ff"
@@ -134,9 +134,9 @@
       </ul>
     </div>
     <div
-      class="flex justify-center flex-wrap items-center px-6 py-12 max-w-6xl mx-auto space-x-32"
+      class="flex justify-center flex-wrap items-center flex-wrap space-x-20 px-6 py-12 max-w-6xl mx-auto"
     >
-      <div class="mt-44">
+      <div class="pt-44">
         <div
           class="w-72 h-10 border rounded-md"
           style="background-color: #b9cfff"
@@ -146,26 +146,26 @@
           style="background-color: #b9cfff"
         ></div>
         <ul>
-          <li>
+          <li class="pt-6">
             <div
-              class="w-72 h-4 border rounded-md mt-6"
+              class="w-72 h-4 border rounded-md"
               style="background-color: #d6e4ff"
             ></div>
           </li>
-          <li>
+          <li class="pt-2">
             <div
-              class="w-80 h-4 border rounded-md mt-2"
+              class="w-80 h-4 border rounded-md"
               style="background-color: #d6e4ff"
             ></div>
           </li>
-          <li>
+          <li class="pt-2">
             <div
-              class="w-64 h-4 border rounded-md mt-2"
+              class="w-64 h-4 border rounded-md"
               style="background-color: #d6e4ff"
             ></div>
           </li>
         </ul>
-        <ul class="flex space-x-16 mt-6">
+        <ul class="flex space-x-16 pt-6 flex-wrap">
           <li>
             <div
               class="w-12 h-12 border rounded-md"
@@ -198,8 +198,9 @@
           </li>
         </ul>
       </div>
-      <div
-        class="w-72 h-96 mt-40 border rounded-lg relative"
+      <div class="pt-40">
+        <div
+        class="w-72 h-96 border rounded-lg relative"
         style="background-color: #b9cfff"
       >
         <span
@@ -216,9 +217,28 @@
           "
         ></span>
       </div>
+      </div>
+      <!-- <div
+        class="w-72 h-96 mt-40 border rounded-lg relative"
+        style="background-color: #b9cfff"
+      >
+        <span
+          style="
+            position: absolute;
+            top: 32%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 8px;
+            rotate: 270deg;
+            border-top: 60px solid #fff;
+            border-right: 30px solid transparent;
+            border-left: 30px solid transparent;
+          "
+        ></span>
+      </div> -->
     </div>
 
-      <div class="flex justify-center items-center space-x-72 mt-32">
+      <div class="flex justify-center items-center space-x-72 mt-32 flex-wrap">
         <div>
           <div class="w-48 h-10 rounded-lg" style="background-color: #b9cfff"></div>
           <ul class="mt-4">
@@ -235,7 +255,7 @@
         </div>
       </div>
 
-      <div class="flex justify-center items-center space-x-36 mt-16">
+      <div class="flex justify-center items-center space-x-36 mt-16 flex-wrap">
         <!-- First set of images and divs -->
         <div class="">
           <div
@@ -289,7 +309,7 @@
       <div class="h-10 w-96 rounded-lg mx-auto" style="background-color: #b9cfff;"></div>
       <div class="h-10 w-72 rounded-lg mx-auto mt-2" style="background-color: #b9cfff;"></div>
     </div>
-    <div class="flex justify-center items-center mt-20">
+    <div class="flex justify-center items-center mt-20 flex-wrap">
       <ul class="flex items-center justify-center mx-auto space-x-4">
         <li class="h-2 w-16 rounded-md" style="background-color: #4685fe;"></li>
         <li class="h-2 w-16 rounded-md" style="background-color: #d6e4ff;"></li>
@@ -299,7 +319,7 @@
       </ul>
     </div>
 
-    <div class="flex justify-center items-center mx-auto mt-16 space-x-10">
+    <div class="flex justify-center items-center mx-auto mt-16 space-x-10 flex-wrap">
       <div class="">
         <div
           class="relative w-36 h-28 flex items-center justify-center rounded-lg"
@@ -379,7 +399,7 @@
     </div>
 
 
-    <div class="flex justify-center items-center mx-auto mt-16 space-x-10">
+    <div class="flex justify-center items-center mx-auto mt-16 space-x-10 flex-wrap">
       <div class="">
         <div
           class="relative w-36 h-28 flex items-center justify-center rounded-lg"
@@ -462,7 +482,7 @@
 
 
 
-  <div class="flex justify-center h-40 items-center mx-auto rounded-md space-x-40 bg-white mt-24" style="width: 44rem;">
+  <div class="flex  flex-wrap h-40 items-center mx-auto rounded-md space-x-40 bg-white mt-24" style="width: 44rem;">
     <div>
       <ul>
         <li class="w-52 h-10 rounded-lg" style="background-color: #b9cfff;"></li>
@@ -483,7 +503,7 @@
       </div>
     </div>
   </div>
-  <div class="flex justify-center items-center mx-auto mt-28">
+  <div class="flex  justify-center items-center mx-auto mt-28">
     <ul class="">
       <li class="w-44 h-8 mx-auto rounded-lg" style="background-color: #b9cfff;"></li>
       <li class="w-60 h-2 mx-auto rounded-md mt-6" style="background-color: #d6e4ff;"></li>
@@ -492,7 +512,7 @@
   </div>
 
   <div class="mt-12">
-    <ul class="flex justify-center items-center space-x-8">
+    <ul class="flex flex-wrap justify-center items-center space-x-8 flex-wrap">
       <li>
         <div class="w-14 h-8 mx-auto rounded-md " style="background-color: #4685fe;"></div>
         <div class="w-20 h-3 mx-auto rounded-md mt-2" style="background-color: #b9cfff;"></div>
@@ -508,7 +528,7 @@
     </ul>
   </div>
 
-  <div class="flex justify-center items-center space-x-28 mt-24">
+  <div class="flex flex-wrap justify-center items-center space-x-28 mt-24 flex-wrap">
     <ul class="space-y-24">
       <li class="w-20 h-10 rounded-md" style="background-color: #b9cfff;"></li>
       <li class="w-20 h-10 rounded-md" style="background-color: #b9cfff;"></li>
@@ -555,7 +575,7 @@
   </div>
   <button class="w-28 h-8 border-2 rounded-xl mx-auto flex mt-10" style="border-color: #4685fe;"></button>
 
-  <div class="flex justify-center items-center space-x-80 mt-32">
+  <div class="flex flex-wrap justify-center items-center space-x-80 mt-32">
     <div>
       <div class="w-48 h-10 rounded-lg" style="background-color: #b9cfff"></div>
       <ul class="mt-4">
@@ -571,14 +591,14 @@
     </div>
   </div>
 
-  <div class="flex space-x-4 mt-20 justify-center items-center mx-auto">
+  <div class="flex flex-wrap space-x-4 mt-20 justify-center items-center mx-auto">
     <div class="flex justify-center items-center w-96 h-60 rounded-xl" style="background-color: #b9cfff;">
     <img src="https://th.bing.com/th/id/R.bae2d37c4317140a408aef6671346186?rik=X1vYbxH6nQxCcA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_218090.png&ehk=poXsiWmpbb3%2b%2bK%2blj8H9AQprCYsoz4kt%2bU4rFFKbOCo%3d&risl=&pid=ImgRaw&r=0" style="filter: invert();" width="60" alt="user-Icon"></div>
     <div class="flex justify-center items-center w-96 h-60 rounded-xl" style="background-color: #b9cfff;">
     <img src="https://th.bing.com/th/id/R.bae2d37c4317140a408aef6671346186?rik=X1vYbxH6nQxCcA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_218090.png&ehk=poXsiWmpbb3%2b%2bK%2blj8H9AQprCYsoz4kt%2bU4rFFKbOCo%3d&risl=&pid=ImgRaw&r=0" style="filter: invert();" width="60" alt="user-Icon"></div>
   </div>
 
-  <div class="flex justify-center items-center mx-auto mt-6 space-x-96">
+  <div class="flex flex-wrap justify-center items-center mx-auto mt-6 space-x-96">
     <div>
       <ul class="">
         <li class="w-44 h-8 rounded-lg" style="background-color: #b9cfff;"></li>
@@ -604,14 +624,14 @@
   </div>
 
   <div>
-    <ul class="flex justify-center items-center space-x-2 mt-14">
+    <ul class="flex flex-wrap items-center space-x-2 mt-14">
       <li class="w-3 h-3 rounded-full" style="background-color: #4685fe;"></li>
       <li class="w-3 h-3 rounded-full" style="background-color: #d6e4ff;"></li>
       <li class="w-3 h-3 rounded-full" style="background-color: #d6e4ff;"></li>
     </ul>
   </div>
 
-  <div class="flex mt-28">
+  <div class="flex flex-wrap mt-28">
     <ul class="mx-auto">
       <li class="w-60 h-8 rounded-lg mx-auto" style="background-color: #b9cfff;"></li>
       <li class="w-80 h-2 mx-auto rounded-lg mt-8" style="background-color: #d6e4ff;"></li>
@@ -620,7 +640,7 @@
   </div>
 
   <div>
-    <ul class="flex justify-center space-x-10">
+    <ul class="flex flex-wrap justify-center space-x-10">
       <li>
         <div class="flex items-center justify-center w-12 h-12 mx-auto rounded-full mt-14" style="background-color: #b9cfff;">
           <img src="https://th.bing.com/th/id/R.bae2d37c4317140a408aef6671346186?rik=X1vYbxH6nQxCcA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_218090.png&ehk=poXsiWmpbb3%2b%2bK%2blj8H9AQprCYsoz4kt%2bU4rFFKbOCo%3d&risl=&pid=ImgRaw&r=0" style="filter: invert();" width="22" alt="user-Icon">
@@ -678,7 +698,7 @@
   </div>
   <button class="w-28 h-8 border-2 rounded-xl mx-auto flex mt-10" style="border-color: #4685fe;"></button>
 
-  <div class="flex justify-center items-center space-x-72 mt-20 ">
+  <div class="flex flex-wrap justify-center items-center space-x-72 mt-20 ">
     <ul>
       <li class="w-48 h-8 rounded-lg " style="background-color: #b9cfff;"></li>
     </ul>
@@ -688,7 +708,7 @@
     </ul>
   </div>
 
-  <div class="flex justify-center items-center mt-16 space-x-6">
+  <div class="flex flex-wrap justify-center items-center mt-16 space-x-6">
     <ul class="bg-white p-14 rounded-xl">
       <div class="w-14 h-10 rounded-md" style="background-color: #4685fe;"></div>
       <li class="mt-4">
@@ -770,13 +790,13 @@
     </ul>
   </div>
   <div>
-    <ul class="flex justify-center items-center mt-10 space-x-2">
+    <ul class="flex flex-wrap justify-center items-center mt-10 space-x-2">
       <li class="w-24 h-2 rounded-md" style="background-color: #d6e4ff;" ></li>
       <li class="w-20 h-2 rounded-md" style="background-color: #4685fe;" ></li>
     </ul>
   </div>
 
-  <div class="flex justify-center">
+  <div class="flex flex-wrap justify-center">
     <ul class="items-center mt-24">
       <li class="w-36 h-8 rounded-md mx-auto" style="background-color: #b9cfff;" ></li>
       <li class="w-48 h-2 rounded-lg mt-5 mx-auto" style="background-color: #d6e4ff;"></li>
@@ -784,7 +804,7 @@
     </ul>
   </div>
 
-  <div class="flex justify-center mt-16 space-x-10 ">
+  <div class="flex flex-wrap justify-center mt-16 space-x-10 ">
     <ul class="">
       <li class="w-6 h-6 rounded-full" style="background-color: #b9cfff;"></li>
       <li class="w-6 h-6 rounded-full mt-16" style="background-color: #b9cfff;"></li>
@@ -810,7 +830,7 @@
   </div>
   <button class="w-28 h-8 border-2 rounded-full mx-auto flex mt-12" style="border-color: #4685fe;"></button>
 
-  <div class="flex justify-center">
+  <div class="flex flex-wrap justify-center">
     <ul class="items-center mt-24">
       <li class="w-36 h-8 rounded-md mx-auto" style="background-color: #b9cfff;" ></li>
       <li class="w-48 h-2 rounded-lg mt-5 mx-auto" style="background-color: #d6e4ff;"></li>
@@ -819,25 +839,25 @@
   </div>
 
   <div class="space-y-6 mt-12">
-    <ul class="flex justify-center items-center space-x-10">
+    <ul class="flex flex-wrap justify-center items-center space-x-10">
       <li class="h-8 w-28 rounded-md" style="background-color: #d6e4ff;"></li>
       <li class="h-8 w-28 rounded-md" style="background-color: #d6e4ff;"></li>
       <li class="h-8 w-28 rounded-md" style="background-color: #d6e4ff;"></li>
     </ul>
-    <ul class="flex justify-center items-center space-x-10">
+    <ul class="flex flex-wrap justify-center items-center space-x-10">
       <li class="h-8 w-28 rounded-md" style="background-color: #d6e4ff;"></li>
       <li class="h-8 w-28 rounded-md" style="background-color: #d6e4ff;"></li>
     </ul>
   </div>
 
   <div>
-    <ul class="flex justify-center items-center mt-10 space-x-2">
+    <ul class="flex flex-wrap justify-center items-center mt-10 space-x-2">
       <li class="w-20 h-2 rounded-md" style="background-color: #d6e4ff;" ></li>
       <li class="w-16 h-2 rounded-md" style="background-color: #4685fe;" ></li>
     </ul>
   </div>
 
-  <div class="flex justify-center items-center space-x-72 mt-20 ">
+  <div class="flex flex-wrap justify-center items-center space-x-72 mt-20 ">
     <ul>
       <li class="w-48 h-8 rounded-lg " style="background-color: #b9cfff;"></li>
     </ul>
@@ -847,7 +867,7 @@
     </ul>
   </div>
 
-<div class="flex space-x-6 justify-center items-center mt-16" >
+<div class="flex flex-wrap space-x-6 justify-center items-center mt-16" >
   <div class="">
     <div
       class="relative w-40 h-28 flex items-center justify-center rounded-lg"
@@ -863,7 +883,7 @@
     <div>
       <ul>
         <li class="w-36 h-6 rounded-md mt-2" style="background-color: #d6e4ff"></li>
-        <div class="flex space-x-2">
+        <div class="flex flex-wrap space-x-2">
           <div class="flex items-center justify-center w-4 h-4 rounded-full mt-2" style="background-color: #b9cfff;">
             <img src="https://th.bing.com/th/id/R.bae2d37c4317140a408aef6671346186?rik=X1vYbxH6nQxCcA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_218090.png&ehk=poXsiWmpbb3%2b%2bK%2blj8H9AQprCYsoz4kt%2bU4rFFKbOCo%3d&risl=&pid=ImgRaw&r=0" style="filter: invert();" width="7" alt="user-Icon">
           </div>
@@ -950,7 +970,7 @@
 </div>
 <button class="w-28 h-8 border-2 rounded-full mx-auto flex mt-12" style="border-color: #4685fe;"></button>
 
-<div class="flex justify-center mt-10">
+<div class="flex flex-wrap justify-center mt-10">
   <ul class="items-center mt-24">
     <li class="w-60 h-8 rounded-md mx-auto" style="background-color: #b9cfff;" ></li>
     <li class="w-96 h-2 rounded-lg mt-5 mx-auto" style="background-color: #d6e4ff;"></li>
@@ -966,14 +986,23 @@
 </div>
 
 <div>
-  <ul class="flex space-x-4 justify-center items-center mt-4">
+  <ul class="flex flex-wrap space-x-4 justify-center items-center mt-6">
     <li class="w-2 h-2" style="background-color: #4685fe;"></li>
     <li class="w-28 h-2" style="background-color: #d6e4ff;"></li>
   </ul>
 </div>
 
-<div class="mt-20">
-  
+<div class=" flex flex-wrap justify-center items-center py-4 w-full mt-16" style="background-color: #d6e4ff">
+
+<div class="ml-6">
+  <p class="text-lg font-bold" style="color: #4e84ee;">FLOW</p>
+</div>
+
+  <div class="container mx-auto flex items-end justify-end ml-auto">
+    <div class="w-4 h-4 bg-white rounded-full mr-2" style="background-color: #b9cfff;"></div>
+    <div class="w-4 h-4 bg-white rounded-full mr-2" style="background-color: #b9cfff;"></div>
+    <div class="w-4 h-4 bg-white rounded-full mr-2" style="background-color: #b9cfff;"></div>
+  </div>
 </div>
 </body>
 </html>
