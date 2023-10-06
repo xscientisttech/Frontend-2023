@@ -2,11 +2,30 @@
 
 Welcome to the Daily Task Submission Repository. To maintain organization and consistency, please follow the structure outlined below when submitting your daily tasks.
 
+# Things to do before work
+
+### Check active Repo
+<p>
+  <img src="README/image01.PNG" width="1000px">
+</p>
+
+### Pull changes from main branch to your `branch`
+
+```
+git pull origin main
+```
+
+### Add your changes, stash them with commit and push on your `branch`.
+
+```
+git add . or git add -A
+git commit -m "message.."
+git push origin [branch-name]
+```
+
 ## Repository Structure
 
 The repository structure should be as follows:
-
-
 
 Here's a breakdown of the structure:
 
@@ -26,23 +45,26 @@ By adhering to this structure, we can easily track and review your daily task su
 - [Kaveri](https://xscientisttech.github.io/Frontend-2023/kaveri/Task1/index.html)
 - [Kiran](https://xscientisttech.github.io/Frontend-2023/kiran/Task1/index.html)
 - [Prathamesh](https://xscientisttech.github.io/Frontend-2023/Prathamesh_Patil/task-1/card.html)
-- Suraj - NA
+- [Suraj](https://xscientisttech.github.io/suraj/Task01/index.html)
 - [subodh](https://xscientisttech.github.io/Frontend-2023/subodh/Task%2001/index.html)
+- [Suyog](https://xscientisttech.github.io/Frontend-2023/suyog/task01/index.html)
 
 ### Task02
 - [Jayesh](https://xscientisttech.github.io/Frontend-2023/Jayesh/Task2/index.html)
 - Kaveri - NA
 - Kiran - NA
 - [Prathamesh](https://xscientisttech.github.io/Frontend-2023/Prathamesh_Patil/task-2/index.html)
-- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj/Task_2/index.html)
 - [subodh](https://xscientisttech.github.io/Frontend-2023/subodh/Task%2002/index.html)
-
+- [Suyog](https://xscientisttech.github.io/Frontend-2023/suyog/task02/index.html)
+- [Suraj](https://xscientisttech.github.io/suraj/Task02/index.html)
 
 ### Task03
 - [subodh](https://xscientisttech.github.io/Frontend-2023/subodh/Task%2003/index.html)
-- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj/Task3/src/index.html)
 - [Prathamesh](https://xscientisttech.github.io/Frontend-2023/Prathamesh_Patil/task-3/index.html)
+- [YogeshKadu](https://xscientisttech.github.io/Frontend-2023/YogeshKadu/task1/index.html)
 
 ### Task04
-- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj/Task04/index.html)
 - [Prathamesh](https://xscientisttech.github.io/Frontend-2023/Prathamesh_Patil/task-4/index.html)
+- [Suyog](https://xscientisttech.github.io/Frontend-2023/suyog/task04/index.html)
+- [subodh](https://xscientisttech.github.io/Frontend-2023/subodh/Task%2004/index.html)
+
