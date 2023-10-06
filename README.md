@@ -56,15 +56,20 @@ By adhering to this structure, we can easily track and review your daily task su
 - [Prathamesh](https://xscientisttech.github.io/Frontend-2023/Prathamesh_Patil/task-2/index.html)
 - [subodh](https://xscientisttech.github.io/Frontend-2023/subodh/Task%2002/index.html)
 - [Suyog](https://xscientisttech.github.io/Frontend-2023/suyog/task02/index.html)
-- [Suraj](https://xscientisttech.github.io/suraj/Task02/index.html)
+- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj/Task02/index.html)
 
 ### Task03
 - [subodh](https://xscientisttech.github.io/Frontend-2023/subodh/Task%2003/index.html)
 - [Prathamesh](https://xscientisttech.github.io/Frontend-2023/Prathamesh_Patil/task-3/index.html)
 - [YogeshKadu](https://xscientisttech.github.io/Frontend-2023/YogeshKadu/task1/index.html)
+- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj/Task03/index.html)
 
 ### Task04
 - [Prathamesh](https://xscientisttech.github.io/Frontend-2023/Prathamesh_Patil/task-4/index.html)
 - [Suyog](https://xscientisttech.github.io/Frontend-2023/suyog/task04/index.html)
 - [subodh](https://xscientisttech.github.io/Frontend-2023/subodh/Task%2004/index.html)
+- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj/Task04/index.html)
+
+### Task05
+- [Suraj](https://xscientisttech.github.io/Frontend-2023/suraj/Task05/index.html)
 
