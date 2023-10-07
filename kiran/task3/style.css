@@ -7,18 +7,26 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  overflow-wrap: break-word;
+
 }
 
 body{
   background: #e1ecf2;
+  overflow-wrap: break-word;
+
 }
 
 .wrapper{
-  margin: 10px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #f1f1f1;
+
 }
 
 .wrapper .top_navbar{
-  width: calc(100% - 20px);
+  width:100%;
   height: 60px;
   display: flex;
   position: fixed;
@@ -28,7 +36,7 @@ body{
 .wrapper .top_navbar .hamburger{
   width: 70px;
   height: 100%;
-  background: #2e4ead;
+  background: #fff;
   padding: 15px 17px;
   border-top-left-radius: 20px;
   cursor: pointer;
@@ -111,7 +119,7 @@ body{
 }
 
 .wrapper1 .top_navbar{
-  width: calc(100% - 20px);
+  width:100%;
   height: 60px;
   display: flex;
   position: fixed;
@@ -122,7 +130,7 @@ body{
 .wrapper1 .top_navbar .hamburger{
   width: 70px;
   height: 100%;
-  background: #2e4ead;
+  background: #fff;
   padding: 15px 17px;
   border-top-left-radius: 20px;
   cursor: pointer;
@@ -205,7 +213,7 @@ body{
 }
 
 .wrapper2 .top_navbar{
-  width: calc(100% - 20px);
+  width:100%;
   height: 60px;
   display: flex;
   position: fixed;
@@ -216,7 +224,7 @@ body{
 .wrapper2 .top_navbar .hamburger{
   width: 70px;
   height: 100%;
-  background: #2e4ead;
+  background: #fff;
   padding: 15px 17px;
   border-top-left-radius: 20px;
   cursor: pointer;
@@ -309,7 +317,7 @@ body{
 }
 
 .wrapper3 .top_navbar{
-  width: calc(100%);
+  width: 100%;
   height: 60px;
   display: flex;
   position: fixed;
@@ -320,7 +328,7 @@ body{
 .wrapper3 .top_navbar .hamburger{
   width: 70px;
   height: 100%;
-  background: #2e4ead;
+  background: #fff;
   padding: 15px 17px;
   border-top-left-radius: 20px;
   cursor: pointer;
@@ -403,7 +411,7 @@ body{
 }
 
 .wrapper4 .top_navbar{
-  width: calc(100%);
+  width: 100%;
   height: 60px;
   display: flex;
   position: fixed;
@@ -474,7 +482,7 @@ body{
 }
 
 .wrapper5 .top_navbar{
-  width: calc(100%);
+  width:100%;
   height: 60px;
   display: flex;
   position: fixed;
@@ -500,7 +508,7 @@ body{
 }
 
 .wrapper5 .top_navbar .top_menu{
-  width: calc(100% - 70px);
+  width: 100%;
   height: 100%;
   background: #fff;
   border-top-right-radius: 20px;
@@ -616,7 +624,7 @@ body{
 .wrappera .top_navbar .hamburger{
   width: 70px;
   height: 100%;
-  background: #2121da;
+  background: gray;
   padding: 15px 17px;
   border-top-left-radius: 20px;
   cursor: pointer;
@@ -625,15 +633,15 @@ body{
 .wrappera .top_navbar .hamburger div{
   width: 35px;
   height: 4px;
-  background: #92a6e2;
+  background: #d8dff2;
   margin: 5px 0;
   border-radius: 5px;
 }
 
 .wrappera .top_navbar .top_menu{
-  width: calc(100% - 70px);
+  width: 100%;
   height: 100%;
-  background: #bf7c7c;
+  background: gray;
   border-top-right-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -710,7 +718,7 @@ body{
 .wrapper1a .top_navbar .hamburger{
   width: 70px;
   height: 100%;
-  background: #2e4ead;
+  background: gray;
   padding: 15px 17px;
   border-top-left-radius: 20px;
   cursor: pointer;
@@ -725,9 +733,9 @@ body{
 }
 
 .wrapper1a .top_navbar .top_menu{
-  width: calc(100% - 70px);
+  width: 100%;
   height: 100%;
-  background:#bf7c7c;
+  background:gray;
   border-top-right-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -793,7 +801,7 @@ body{
 }
 
 .wrapper2a .top_navbar{
-  width: calc(100% - 20px);
+  width:100%;
   height: 60px;
   display: flex;
   position: fixed;
@@ -804,7 +812,7 @@ body{
 .wrapper2a .top_navbar .hamburger{
   width: 70px;
   height: 100%;
-  background: #2e4ead;
+  background:gray;
   padding: 15px 17px;
   border-top-left-radius: 20px;
   cursor: pointer;
@@ -821,7 +829,7 @@ body{
 .wrapper2a .top_navbar .top_menu{
   width: calc(100% - 70px);
   height: 100%;
-  background:#bf7c7c;
+  background:gray;
   border-top-right-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -897,7 +905,7 @@ body{
 }
 
 .wrapper3a .top_navbar{
-  width: calc(100%);
+  width: 100%;
   height: 60px;
   display: flex;
   position: fixed;
@@ -908,7 +916,7 @@ body{
 .wrapper3a .top_navbar .hamburger{
   width: 70px;
   height: 100%;
-  background: #2e4ead;
+  background: gray;
   padding: 15px 17px;
   border-top-left-radius: 20px;
   cursor: pointer;
@@ -925,7 +933,7 @@ body{
 .wrapper3a .top_navbar .top_menu{
   width: calc(100% - 70px);
   height: 100%;
-  background:#bf7c7c;
+  background:gray;
   border-top-right-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -991,7 +999,7 @@ body{
 }
 
 .wrapper4a .top_navbar{
-  width: calc(100%);
+  width: 100%;
   height: 60px;
   display: flex;
   position: fixed;
@@ -1019,7 +1027,7 @@ body{
 .wrapper4a .top_navbar .top_menu{
   width: calc(100% - 70px);
   height: 100%;
-  background:#bf7c7c;
+  background:gray;
   border-top-right-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -1062,7 +1070,7 @@ body{
 }
 
 .wrapper5a .top_navbar{
-  width: calc(100%);
+  width: 100%;
   height: 60px;
   display: flex;
   position: fixed;
@@ -1090,7 +1098,7 @@ body{
 .wrapper5a .top_navbar .top_menu{
   width: calc(100% - 70px);
   height: 100%;
-  background: #bf7c7c;
+  background:gray;
   border-top-right-radius: 20px;
   display: flex;
   justify-content: space-between;
