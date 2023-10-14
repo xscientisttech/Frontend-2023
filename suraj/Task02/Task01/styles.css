@@ -1,0 +1,94 @@
+body {
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #acc8dd;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.card {
+    background-color: #515a79;
+    color: #fff;
+    padding: 120px;
+    text-align: center;
+    flex: 1;
+    min-width: calc(33.33% - 20px);
+    box-sizing: border-box; 
+}
+.cards {
+    background-color: #495271;
+    color: #fff;
+    padding: 100px;
+    text-align: center;
+    flex: 1;
+    min-width: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+.card img {
+    height: 30px;
+    width: 40px;
+    padding-bottom: 15px;
+    filter: invert();
+     
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card-read-more {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* @media (max-width: 768px) {
+    .card {
+        min-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        min-width: 100%;
+    }
+} */
+@media (max-width: 576px) {
+    .card {
+        min-width: 100%; /* Cards take full width on small screens */
+    }
+}
+
+/* Medium screens (577px to 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .card {
+        min-width: calc(50% - 20px); /* Cards split into two columns on medium screens */
+    }
+}
+
+/* Large screens (993px to 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .card {
+        min-width: calc(33.33% - 20px); /* Cards split into three columns on large screens */
+    }
+}
+
+/* Extra-large screens (1201px and above) */
+@media (min-width: 1201px) {
+    .card {
+        min-width: calc(25% - 20px); /* Cards split into four columns on extra-large screens */
+    }
+}
