@@ -1,0 +1,472 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Sora:wght@500&display=swap');
+
+
+
+
+
+  body {
+    background-image: url('images/task06.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+  }
+
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#wid{
+    width: 43rem;
+}
+
+
+.section-1{
+  background-image: transparent;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  min-height: 26rem;
+  background-size: 8rem cover;
+  background-position: center 0% 0%;
+  background-repeat: repeat repeat;
+  justify-content: center;
+  font-family: 'Sora', sans-serif;
+}
+.section-1 h1{
+    color: white;
+    font-size: 5rem;
+    font-family: 'Sora', sans-serif;
+    margin-top: 11rem;
+    letter-spacing: 0.32rem;
+    position: relative;
+}
+
+#sec3 h1{
+  color: white;
+  font-size: 3.125rem;
+  font-family: 'Sora', sans-serif;
+  margin-top: 11rem;
+  position: relative;
+}
+
+.section-1 h1::before{
+    position: absolute;
+    content: "NON SED PRIMIS VOLUTPAT";
+    top: -3.125rem;
+    font-size: 0.8125rem;
+    letter-spacing: 0.28125rem;
+    font-weight: 100;
+    color: #28D496;
+}
+
+#sec3 h1::before{
+  position: absolute;
+  content: "ULTRICIES URNA";
+  top: -3.125rem;
+  font-size: 0.8125rem;
+  letter-spacing: 0.28125rem;
+  font-weight: 100;
+  color: #28D496;
+}
+
+.section-1 p{
+    margin-top: 3rem;
+    color: #FFFFFFAB;
+    letter-spacing: 0.0625rem;
+    line-height: 2;
+    font-family: 'Inter', sans-serif;
+}
+
+#sec3 .sec3p{
+  margin-top: 0;
+  line-height: 4;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 1.3rem 2rem;
+    background-color: #28D496;
+    margin-top: 2.5rem;
+    border-radius: 3.125rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.3125rem;
+    font-family: 'Sora', sans-serif;
+    transition: all 0.2s ease-in-out;
+    border: none;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+
+.icon{
+    margin-left: 0.625rem;
+    font-size: 1.25rem;
+}
+
+
+.section {
+    background-image: url('images/Screenshot\ 2023-10-13\ 022726.png');
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    min-height: 26rem;
+    background-size: 8rem cover;
+    background-position: center 0% 0%;
+    background-repeat: repeat repeat;
+    margin-top: 8rem;
+    justify-content: center;
+    font-family: 'Sora', sans-serif;
+}
+
+  mark{
+    background-color: transparent;
+    color: rgba(255,255,255,0.278);
+    font-size: 4.625rem;
+  }
+
+  .section-2 h2{
+    color: #fff;
+    margin-top: 8rem;
+    font-size: 4.625rem;
+  }
+
+  .section-2 h3{
+    color:#fff;
+    margin-top: 2rem;
+    font-size: 2.1rem;
+  }
+
+  .section-2 p{
+    color: #FFFFFFAB;
+    margin-top: 2rem;
+    letter-spacing: 0.0625rem;
+    line-height: 2;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .lastp{
+    margin-bottom: 9.375rem;
+  }
+
+  .checkicon{
+    background-color: #28D496;
+    border-radius: 3.125rem;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+
+
+.secul3{
+  margin-top: 2.5rem;
+}
+.secul3 li{
+  list-style: none;
+  justify-content: start;
+  display: flex;
+  align-items: center;
+  color: #FFFFFFAB;
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  line-height: 3.5;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.section-4 h1{
+  font-size: 3.375rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1875rem;
+  position: relative;
+  margin-top: 11rem;
+}
+
+.section-4 h1::before{
+  content: "NULLA COMMODO";
+  position: absolute;
+  top: -3.125rem;
+  color: #28D496;
+  font-size: 0.8125rem;
+  letter-spacing: 0.28125rem;
+  font-weight: 100;
+}
+
+.section-4 p{
+  margin-top: 3rem;
+  color: #FFFFFFAB;
+  letter-spacing: 0.0625rem;
+  line-height: 2;
+  font-family: 'Inter', sans-serif;
+}
+
+input{
+  color: rgba(255,255,255,0.671);
+  background-color: rgba(0, 0, 0, 0.22);
+  border: none;
+  width: 70%;
+  padding: 1.5rem;
+  border-radius: 3.125rem;
+}
+
+input::placeholder{
+  color: #5ea0af;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+input:focus{
+  outline: none;
+  border: 2px solid #28D496;
+}
+
+.inbtn{
+  display: flex;
+  margin-top: 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9rem;
+  flex-wrap: wrap;
+  
+}
+
+.inbtn button{
+  padding: 1.5rem;
+  width: 25%;
+  border-radius: 3.125rem;
+  background-color: #28D496;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.3125rem;
+  font-family: 'Sora', sans-serif;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.inbtn button:hover{
+  transform: scale(1.1);
+}
+
+.sec5ul{
+  display: flex;
+  margin-top: 7.5rem;
+  list-style: none;
+  padding: 0;
+
+}
+
+.sec5ul li{
+  /* list-style: none; */
+  padding-right: 1.5rem;
+  display: inline-block;
+  position: relative;
+}
+
+.sec5icon{
+  font-size: 1.5rem;
+  background-color: #28D496;
+  border-radius: 3.125rem;
+  padding: 0.8rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.sec5icon:hover {
+  transform: scale(1.1);
+}
+
+.section-5 p{
+  margin-top: 3rem;
+  color: #FFFFFFAB;
+  letter-spacing: 0.0625rem;
+  line-height: 2;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 6rem;
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+  /* ================================             section-1              ================================================*/
+
+  #wid{
+    width: 20rem;
+  }
+  .section-1 h1{
+    font-size: 3.2rem;
+    margin-top: 8rem;
+    letter-spacing: 1px;
+  }
+  .section-1 h1::before{
+    font-size: 0.6875rem;
+    letter-spacing: 0.25rem;
+    top: -40px;
+    font-weight: 700;
+  }
+  .section-1 p{
+    font-size: 0.9rem;
+    margin-top: 1.8rem;
+  }
+  .btn{
+    font-size: 0.6875rem;
+    padding: 0.9rem 4rem;
+    width: 100%;
+    margin-top: 2rem;
+    font-weight: 550;
+    letter-spacing: 0.25rem;
+}
+
+
+/*====================================                  section-2                     ======================================================*/
+
+.section {
+  margin-top: 5.2rem;
+}
+
+mark{
+  background-color: transparent;
+  color: rgba(255,255,255,0.278);
+  font-size: 3.12rem;
+}
+
+.section-2 h2{
+  color: #fff;
+  margin-top: 5.2rem;
+  font-size: 3.12rem;
+}
+
+.section-2 h3{
+  color:#fff;
+  margin-top: 2rem;
+  font-size: 1.375rem;
+  letter-spacing: 0.05rem;
+  font-weight: 550;
+}
+
+.section-2 p{
+  color: #FFFFFFAB;
+  margin-top: 0.91625rem;
+  letter-spacing: 0.0625rem;
+  line-height: 2;
+  font-weight: 100;
+}
+.lastp{
+  margin-bottom: 5.375rem;
+}
+
+
+/* =========================== section-3 ======================================== */
+
+.checkicon{
+  font-size: 1.8rem;
+}
+.secul3{
+margin-top: 2.5rem;
+}
+.secul3 li{
+font-size: 1rem;
+letter-spacing: 0.0625rem;
+line-height: 2.5;
+}
+#sec3 h1{
+  color: white;
+  font-size: 2rem;
+  margin-top: 8.2rem;
+}
+#sec3 h1::before{
+  top: -3.125rem;
+  font-size: 0.7125rem;
+  letter-spacing: 0.28125rem;
+  font-weight: 500;
+}
+
+
+/* ===================================== section-4 ==================================== */
+
+.section-4 h1{
+  font-size: 2.08rem;
+  letter-spacing: 0.05rem;
+  margin-top: 8.5rem;
+}
+
+.section-4 h1::before{
+  top: -3.125rem;
+  font-size: 0.7125rem;
+  letter-spacing: 0.28125rem;
+  font-weight: 600;
+}
+
+.section-4 p{
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+input{
+  width: 100%;
+  padding: 1.1rem;
+}
+
+.inbtn{
+  margin-top: 2rem;
+  margin-bottom: 5.2rem;
+}
+
+.inbtn button{
+  padding: 1.1rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+
+/* ====================================== section 5 ======================================= */
+
+.sec5ul{
+  margin-top: 5rem;
+}
+
+.sec5ul li{
+  padding-right: 1.2rem;
+}
+
+.sec5icon{
+  font-size: 1.4rem;
+  padding: 0.6rem;
+}
+
+.section-5 p{
+  margin-top: 1.5rem;
+  letter-spacing: 0.0625rem;
+  margin-bottom: 5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+}
+
+
+@media screen and (min-width: 640px) and (max-width: 800px) {
+  #wid{
+    width: 30rem;
+  }
+}
+
+@media screen and (min-width: 150px) and (max-width: 350px) {
+  #wid{
+    width: 16rem;
+  }
+}
+
