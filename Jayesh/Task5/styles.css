@@ -20,6 +20,7 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--primary-color);
+    overflow-x: hidden;
 }
 
 /* Flex CSS */
@@ -673,6 +674,10 @@ a {
 
     .review-footer {
         flex-direction: column;
+    }
+
+    .footer-container {
+        gap: 1.1rem;
     }
 
     .footer-bar {
