@@ -21,7 +21,8 @@ button {
     width: 100%;
     /* height: 50px; */
     background-color: #27272a;
-    padding: 20px 50px;
+    padding: 20px 12%;
+    transition: 0.4s;
 }
 
 .navbar .container {
@@ -50,9 +51,31 @@ button {
     flex-direction: column;
 }
 
+.logo div a {
+    color: #059669;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.logo div a:first-child {
+    font-size: 16px;
+    color: #fff;
+}
+
+
 .navbar .nav-list {
     display: flex;
-    gap: 30px;
+    color: #ffffff;
+    gap: 40px;
+}
+
+.navbar .nav-list a {
+    color: #ffffff98;
+    font-weight: 600;
+}
+
+.navbar .nav-list a:first-child {
+    color: #fff;
 }
 
 .navbar .btns {
@@ -77,15 +100,24 @@ button {
 
 .sticky {
     background-color: #fff;
+    box-shadow: 5px 0px 10px 0 #27272a5b;
     color: black;
     position: fixed;
     top: 0;
     width: 100%
 }
 
-.sticky a {
-    color: #27272a;
+.sticky .logo div a:first-child {
+    color: black;
+}
+
+.sticky .nav-list a {
+    color: rgba(0, 0, 0, 0.544);
     font-weight: 600;
+}
+
+.sticky .nav-list a:first-child {
+    color: black;
 }
 
 .sticky .btns button {
@@ -100,14 +132,12 @@ button {
     border: 1px solid #27272a;
 }
 
-
-  
-
 .hero {
     background-color: #27272a;
     color: #fff;
     text-align: center;
     height: 50vh;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,7 +164,7 @@ button {
 
 .content .container {
     width: 100%;
-    max-width: 768px;
+    max-width: 868px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,6 +201,7 @@ button {
     border-radius: 5px;
     padding: 15px 20px;
     display: flex;
+    flex-grow: 1;
     gap: 10px;
 }
 
@@ -190,6 +221,7 @@ button {
     color: #ffffff;
     background-color: #d3d2d2;
     flex: 1;
+    padding: 15px 20px;
     font-size: 20px;
     border-radius: 5px;
     border: none;
@@ -206,7 +238,7 @@ button {
 }
 
 .services .container {
-    width: 768px;
+    width: 868px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -274,13 +306,9 @@ button {
 }
 
 .FAQs .faq-body {
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 450px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
 }
 
 .FAQs p a {
@@ -290,6 +318,8 @@ button {
 
 .FAQs .c1 {
     /* display: flex; */
+    display: grid;
+    /* grid-column: span 2; */
     gap: 20px;
 }
 
@@ -312,13 +342,39 @@ footer a {
     font-size: small;
 }
 
-@media screen and (max-width: 800px) {
-    .container {
-        width: 100%;
+@media screen and (max-width: 1024px) {
+
+    .navbar {
+        padding: 25px 5%;
     }
 
-    .FAQs .faq-body {
-        display: block;
+    .sticky {
+        padding: 15px 5%;
     }
 
+    .FAQs {
+        padding: 5%;
+    }
+
+    .FAQs .c1 {
+        display: grid;
+        grid-column: span 2;
+        gap: 20px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 648px) {
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 648px;
+    }
+
+    .navbar .nav-list, .navbar .btns {
+        display: none;
+    }
 }
