@@ -53,7 +53,7 @@ button {
 
 .logo div a {
     color: #059669;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -72,6 +72,7 @@ button {
 .navbar .nav-list a {
     color: #ffffff98;
     font-weight: 600;
+    font-size: 16px;
 }
 
 .navbar .nav-list a:first-child {
@@ -83,12 +84,17 @@ button {
     gap: 10px;
 }
 
+.navbar i img {
+    filter: invert(80%);
+    display: none;
+}
+
 .navbar .btns button {
     padding: 8px 16px;
     border-radius: 5px;
     border: 2px solid #fff;
     outline: none;
-    font-size: medium;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -108,7 +114,7 @@ button {
 }
 
 .sticky .logo div a:first-child {
-    color: black;
+    color: rgba(0, 0, 0, 0.802);
 }
 
 .sticky .nav-list a {
@@ -145,11 +151,13 @@ button {
 }
 
 .hero h1 {
-    font-size: 50px;
+    font-size: 52px;
+    font-weight: 700;
 }
 
 .hero h3 {
-    color: #ffffff73;
+    font-size: 20px;
+    color: #ffffffa9;
     font-weight: normal;
 }
 
@@ -252,7 +260,7 @@ button {
 .services .c1 div:first-child {
     /* display: inline-flex; */
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 30px;
@@ -294,7 +302,7 @@ button {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
 }
 
 .FAQs h2 {
@@ -320,7 +328,7 @@ button {
     /* display: flex; */
     display: grid;
     /* grid-column: span 2; */
-    gap: 20px;
+    gap: 10px;
 }
 
 .FAQs .c1 h2 {
@@ -330,9 +338,10 @@ button {
 }
 
 footer {
+    border-top: 1px solid #aeaeae;
     display: flex;
     justify-content: space-between;
-    background-color: #EBEBEB;
+    background-color: #f4f4f5;
     width: 100%;
     padding: 40px;
 }
@@ -376,5 +385,22 @@ footer a {
 
     .navbar .nav-list, .navbar .btns {
         display: none;
+    }
+
+    .navbar i img {
+        display: block;
+    }
+
+    footer {
+        padding: 5%;
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    footer .list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
