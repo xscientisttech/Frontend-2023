@@ -21,7 +21,8 @@ button {
     width: 100%;
     /* height: 50px; */
     background-color: #27272a;
-    padding: 20px 50px;
+    padding: 20px 12%;
+    transition: 0.4s;
 }
 
 .navbar .container {
@@ -50,9 +51,32 @@ button {
     flex-direction: column;
 }
 
+.logo div a {
+    color: #059669;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.logo div a:first-child {
+    font-size: 16px;
+    color: #fff;
+}
+
+
 .navbar .nav-list {
     display: flex;
-    gap: 30px;
+    color: #ffffff;
+    gap: 40px;
+}
+
+.navbar .nav-list a {
+    color: #ffffff98;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.navbar .nav-list a:first-child {
+    color: #fff;
 }
 
 .navbar .btns {
@@ -60,12 +84,22 @@ button {
     gap: 10px;
 }
 
+.navbar i {
+    position: absolute;
+    right: 5%;
+}
+
+.navbar i img {
+    filter: invert(80%);
+    display: none;
+}
+
 .navbar .btns button {
     padding: 8px 16px;
     border-radius: 5px;
     border: 2px solid #fff;
     outline: none;
-    font-size: medium;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -77,15 +111,24 @@ button {
 
 .sticky {
     background-color: #fff;
+    box-shadow: 5px 0px 10px 0 #27272a5b;
     color: black;
     position: fixed;
     top: 0;
     width: 100%
 }
 
-.sticky a {
-    color: #27272a;
+.sticky .logo div a:first-child {
+    color: rgba(0, 0, 0, 0.802);
+}
+
+.sticky .nav-list a {
+    color: rgba(0, 0, 0, 0.544);
     font-weight: 600;
+}
+
+.sticky .nav-list a:first-child {
+    color: black;
 }
 
 .sticky .btns button {
@@ -100,14 +143,12 @@ button {
     border: 1px solid #27272a;
 }
 
-
-  
-
 .hero {
     background-color: #27272a;
     color: #fff;
     text-align: center;
     height: 50vh;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,11 +156,13 @@ button {
 }
 
 .hero h1 {
-    font-size: 50px;
+    font-size: 52px;
+    font-weight: 700;
 }
 
 .hero h3 {
-    color: #ffffff73;
+    font-size: 20px;
+    color: #ffffffa9;
     font-weight: normal;
 }
 
@@ -134,7 +177,7 @@ button {
 
 .content .container {
     width: 100%;
-    max-width: 768px;
+    max-width: 868px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,18 +185,37 @@ button {
 }
 
 .content .head {
+    display: flex;
     width: 100%;
     margin-top: -150px;
     box-shadow: 10px 5px 40px 0 #27272a5b;
     border-radius: 0 10px 10px 10px;
 }
 
-.content .head .c1 h4 {
+.content .head .c1 {
+    width: 100%;
+}
+
+.content .head .c2 {
+    position: absolute;
+    margin-left: 136px;
+}
+
+.content .head .c2 .box {
+    display: none;
+}
+
+
+.content .head .c1 h4 , .content .head .c2 h4{
     font-weight: 500;
     background-color: #fff;
     width: fit-content;
     padding: 10px 30px;
     border-radius: 10px 10px 0 0;
+}
+
+.content .head .c2 h4 {
+    background-color: #ffffffc9;
 }
 
 .content .head .box {
@@ -167,10 +229,43 @@ button {
 
 .content .head .input-box {
     width: 80%;
+    /* border: 1px solid #cacaca; */
+    border-radius: 5px;
+    /* padding: 15px 20px; */
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+.content .head .input-box i {
+    position: absolute;
+    margin-left: 15px;
+    /* color: #9f9f9f; */
+}
+
+.content .head input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    padding: 20px 20px;
+    padding-left: 50px;
+}
+
+.content .head input:focus {
+    border:2px solid #059669;
+}
+
+
+/* .content .head .input-box {
+    width: 80%;
     border: 1px solid #cacaca;
     border-radius: 5px;
     padding: 15px 20px;
     display: flex;
+    flex-grow: 1;
     gap: 10px;
 }
 
@@ -178,7 +273,7 @@ button {
     width: 80%;
     outline: none;
     border: none;
-}
+} */
 
 .content .head input::placeholder {
     font-weight: 500;
@@ -190,6 +285,7 @@ button {
     color: #ffffff;
     background-color: #d3d2d2;
     flex: 1;
+    padding: 15px 20px;
     font-size: 20px;
     border-radius: 5px;
     border: none;
@@ -206,7 +302,7 @@ button {
 }
 
 .services .container {
-    width: 768px;
+    width: 868px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -220,7 +316,7 @@ button {
 .services .c1 div:first-child {
     /* display: inline-flex; */
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 30px;
@@ -262,7 +358,7 @@ button {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
 }
 
 .FAQs h2 {
@@ -274,13 +370,9 @@ button {
 }
 
 .FAQs .faq-body {
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 450px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
 }
 
 .FAQs p a {
@@ -290,7 +382,9 @@ button {
 
 .FAQs .c1 {
     /* display: flex; */
-    gap: 20px;
+    display: grid;
+    /* grid-column: span 2; */
+    gap: 10px;
 }
 
 .FAQs .c1 h2 {
@@ -300,9 +394,10 @@ button {
 }
 
 footer {
+    border-top: 1px solid #aeaeae;
     display: flex;
     justify-content: space-between;
-    background-color: #EBEBEB;
+    background-color: #f4f4f5;
     width: 100%;
     padding: 40px;
 }
@@ -312,13 +407,60 @@ footer a {
     font-size: small;
 }
 
-@media screen and (max-width: 800px) {
-    .container {
-        width: 100%;
+@media screen and (max-width: 1024px) {
+
+    .navbar {
+        padding: 25px 5%;
     }
 
-    .FAQs .faq-body {
+    .sticky {
+        padding: 15px 5%;
+    }
+
+    .FAQs {
+        padding: 5%;
+    }
+
+    .FAQs .c1 {
+        display: grid;
+        grid-column: span 2;
+        gap: 20px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 648px) {
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 648px;
+    }
+
+    .navbar .nav-list, .navbar .btns {
+        display: none;
+    }
+
+    .navbar i img {
         display: block;
     }
 
+    .services {
+        padding: 5%;
+    }
+
+    footer {
+        padding: 5%;
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    footer .list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }

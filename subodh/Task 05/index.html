@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./res/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Task 06</title>
 </head>
@@ -27,6 +28,9 @@
                 <button>Login</button>
                 <button>Sign Up</button>
             </div>
+            <i>
+                <img src="./res/menu-line.png" alt="">
+           </i>
         </div>
     </section>
 
@@ -60,13 +64,14 @@
                         <button>Extract</button>
                     </div>
                 </div>
-                <!-- <div class="c2">
-                    <h4>Single Site</h4>
+                <div class="c2">
+                    <h4>Multiple Site</h4>
                     <div class="box">
-                        <input type="text">
-                        <button>Extract</button>
+                        <div class="c3">
+                            
+                        </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
@@ -334,18 +339,18 @@
     <script>
         // Get the navbar
         const navbar = document.getElementById("navbar");
-        
+
         // Get the offset position of the navbar
         const sticky = 80;
-        
+
         // Add the sticky class to the navbar when you reach its scroll position. Remove the sticky class when you leave the scroll position.
         function myFunction() {
             console.log(window.scrollY)
-        if (window.scrollY > sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
+            if (window.scrollY > sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
         }
     </script>
 </body>
