@@ -84,6 +84,11 @@ button {
     gap: 10px;
 }
 
+.navbar i {
+    position: absolute;
+    right: 5%;
+}
+
 .navbar i img {
     filter: invert(80%);
     display: none;
@@ -180,18 +185,37 @@ button {
 }
 
 .content .head {
+    display: flex;
     width: 100%;
     margin-top: -150px;
     box-shadow: 10px 5px 40px 0 #27272a5b;
     border-radius: 0 10px 10px 10px;
 }
 
-.content .head .c1 h4 {
+.content .head .c1 {
+    width: 100%;
+}
+
+.content .head .c2 {
+    position: absolute;
+    margin-left: 136px;
+}
+
+.content .head .c2 .box {
+    display: none;
+}
+
+
+.content .head .c1 h4 , .content .head .c2 h4{
     font-weight: 500;
     background-color: #fff;
     width: fit-content;
     padding: 10px 30px;
     border-radius: 10px 10px 0 0;
+}
+
+.content .head .c2 h4 {
+    background-color: #ffffffc9;
 }
 
 .content .head .box {
@@ -205,6 +229,38 @@ button {
 
 .content .head .input-box {
     width: 80%;
+    /* border: 1px solid #cacaca; */
+    border-radius: 5px;
+    /* padding: 15px 20px; */
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+.content .head .input-box i {
+    position: absolute;
+    margin-left: 15px;
+    /* color: #9f9f9f; */
+}
+
+.content .head input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    padding: 20px 20px;
+    padding-left: 50px;
+}
+
+.content .head input:focus {
+    border:2px solid #059669;
+}
+
+
+/* .content .head .input-box {
+    width: 80%;
     border: 1px solid #cacaca;
     border-radius: 5px;
     padding: 15px 20px;
@@ -217,7 +273,7 @@ button {
     width: 80%;
     outline: none;
     border: none;
-}
+} */
 
 .content .head input::placeholder {
     font-weight: 500;
@@ -389,6 +445,10 @@ footer a {
 
     .navbar i img {
         display: block;
+    }
+
+    .services {
+        padding: 5%;
     }
 
     footer {
