@@ -181,7 +181,7 @@ body {
 .copy-button {
     background-color: var(--color-six);
     border-radius: 100%;
-    padding: 11px;
+    padding: 10px 0 10px 0;
     border-style: none;
 }
 
@@ -633,7 +633,7 @@ body {
     }
 }
 
-@media (600px < width < 800px) {
+@media (600px < width <= 800px) {
     .copy-button {
         display: none;
     }
@@ -643,7 +643,7 @@ body {
     }
 }
 
-@media (width < 600px) {
+@media (width <= 600px) {
     .copy-uniq {
         display: none;
     }
@@ -726,4 +726,9 @@ body {
     .qrcode-one, .copy-button-one {
         width: 100%;
     }
+
+    .copy-button-one {
+        padding: 10px 0px 10px 0px;
+    }
 }
+
