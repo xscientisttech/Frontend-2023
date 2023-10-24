@@ -78,6 +78,15 @@
     color: white;
     background-color: #fd735a;
 }
+.navbar button{
+    border: none;
+    line-height: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: black;
+    display: none; 
+
+}
 .hero{
     max-width: 114rem;
     height: 40rem;
@@ -146,6 +155,8 @@ main .profile-container .profile .text{
     padding: 0.3rem 1.5rem;
     border-radius: 0.2rem;
     background-color: #fd735a;
+    color: white;
+    cursor: pointer;
 }
 
 main .content p{
@@ -229,11 +240,9 @@ blockquote{
 }
 .cards{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 4rem auto;
     gap: 5rem;
-    align-items: center;
-    flex-wrap: wrap;
 
 }
 
@@ -241,10 +250,6 @@ blockquote{
     cursor: pointer;
     transition: all 0.4s ease;
 
-}
-.cards .card-container{
-    flex:1;
-    flex-basis: 200px;
 }
 .cards .card-container .img-holder{
     max-width: 100%;
@@ -310,6 +315,7 @@ blockquote{
 .articles .button{
     margin: o auto;    
     text-align: center;
+    color: white;
 }
 
 .articles .btn{
@@ -332,9 +338,37 @@ footer{
 }
 
 .icons .social{
-    font-size: 3rem;
+    font-size: 5rem;
     color: grey;
     padding: 1rem;
     transition: all o.4s ease;
 }
 
+.icons .social svg{
+    font-size: 3rem;
+    color:grey;
+    padding: 1rem;
+    transition: all 0.4s ease;
+}
+
+.icons .social svg:hover{
+    color: white;
+    cursor: pointer;
+
+}
+
+.icons .copyright p{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: white;
+    margin: 2rem;
+    
+}
+@media(max-width: 800px){
+    .navbar .navbarbtn{
+        display: block;
+    }
+    .navbar ul{
+        display: none;
+    }
+} 
