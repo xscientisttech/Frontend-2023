@@ -1,0 +1,64 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .25s;
+}
+.Container{
+    padding: 15px 9%;
+    padding-bottom: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px, 1fr));
+    gap: 15px;
+    justify-content: center;
+}
+.Container .card{
+    text-align: left;
+    padding: 30px, 20px;
+}
+.Container .card .Thumbnail{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    width: 60%;
+    aspect-ratio: 3/2;
+    text-align: center;
+    background-color: rgba(17, 32, 47, 0.797);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container .card .Thumbnail img{
+    height: 50px;
+    width: 50px;
+    color: white;
+    filter: 100%;
+    align-items: center;
+    font: 20px white;
+    filter: invert(100%);
+}
+.Container .card h3{
+    margin-top: 10px;
+    color:var(--text-200);
+    font-size: 20px;
+    padding: 10px 0;
+
+}
+.Container .card p{
+    color:var(--primary-100);
+    font-size: 12px;
+    line-height: 18px;
+    overflow: wrap;
+  
+}
+.Container .card button{
+    background-color: #7ee298;
+    padding: 6px 35px;
+    color:white;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-top:10px;
+}
+
