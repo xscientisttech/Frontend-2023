@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	/* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+	/* font-weight: normal; */
+}
+
+.outercantainer {
+	width: 100%;
+	min-height: 100vh;
+	z-index: 0;
+	background-image: linear-gradient(45deg, #FFD4AD 0%, #FF947D 55%, #BD8EAF 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container {
+	max-width: 850px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 20px;
+    overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.left {
+	background-color: #f7e6e3;
+	flex: 300px;
+}
+.right {
+	flex: 300px;
+	padding: 10px;
+}
+.right img {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	border-radius: 0 12px 12px 0;
+}
+
+.left .user-detail {
+	width: 100%;
+	height: 100%;
+	align-items: start;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	padding: 40px;
+}
+
+.left img {
+	height: 80px;
+	border-radius: 50%;
+}
+h1 {
+	font-size: 3rem;
+	color: #4c4f57;
+}
+
+p {
+	font-size: 1rem;
+	color: #f29274;
+}
+
+button {
+	height: 50px;
+	width: 150px;
+	border-radius: 5px;
+	background-image: linear-gradient(45deg, #fab676 0%, #ff947d 100%);
+	border: none;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	font-size: 17px;
+}
+.icons {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	gap: 25px;
+	flex-direction: row;
+}
+.icons i {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	border: 1px solid white;
+	background-color: #fff;
+	color: #55575d;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 1000px) {
+	.container {
+		width: 750px;
+	}
+}
+@media (max-width: 620px) {
+	.container{
+        border-radius: 0px;
+    }
+    .left .user-detail{
+        align-items: center;
+    }
+	.container .right img{
+        border-radius: 0 0 12px 12px;
+    }
+	.container .right {
+		/* margin: 10px;  */
+		width: 100%;
+        border-radius: 0 0 15px 15px;
+	}
+
+}
