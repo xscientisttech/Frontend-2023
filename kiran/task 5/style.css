@@ -169,6 +169,8 @@ hr {
 #icons01 {
     list-style: none;
     gap: 1.25rem;
+  list-style-type: none; /* Remove bullets */
+
 }
 
 
