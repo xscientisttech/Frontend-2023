@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./res/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Task 06</title>
 </head>
@@ -27,6 +28,24 @@
                 <button>Login</button>
                 <button>Sign Up</button>
             </div>
+            <i id="menu-btn">
+                <img src="./res/menu-line.png" alt="">
+            </i>
+            
+            <i class="hidden" id="close-btn">
+                <img src="./res/close-line.png" alt="">
+            </i>
+            
+            <div class="menu hidden" id="menu">
+                <a href="#extract">Extract</a>
+                <a href="#API">API</a>
+                <a href="#pricing">pricing</a>
+
+                <hr style="width: 100%; color: #ebebeb5a; border: 1px solid #EBEBEB;">
+
+                <a href="#Login">Login</a>
+                <a href="#Sign up">Sign up</a>
+            </div>
         </div>
     </section>
 
@@ -39,34 +58,43 @@
         <div class="container">
             <div class="head">
                 <div class="c1">
-                    <h4>Single Site</h4>
-                    <div class="box">
-                        <div class="input-box">
-                            <i>
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="icon-tabler icon-tabler-link absolute z-10 transition -translate-y-1/2 left-4 top-1/2"
-                                    width="24px" height="24px" viewBox="0 0 24 24" stroke-width="2"
-                                    stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M9 15l6 -6"></path>
-                                    <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"></path>
-                                    <path
-                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463">
-                                    </path>
-                                </svg>
-                            </i>
-                            <input type="text" placeholder="Enter any URL, like google.com">
+                    <div class="h">
+                        <h4 id="single_site">Single Site</h4>
+                        <h4 class="gray" id="multiple_site">Multiple Site</h4>
+                    </div>
+                    <div class="box" id="site_box">
+                        <div class="b1" id="b1">
+                            <div class="input-box">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon-tabler icon-tabler-link absolute z-10 transition -translate-y-1/2 left-4 top-1/2"
+                                        width="24px" height="24px" viewBox="0 0 24 24" stroke-width="2"
+                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M9 15l6 -6"></path>
+                                        <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"></path>
+                                        <path
+                                            d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463">
+                                        </path>
+                                    </svg>
+                                </i>
+                                <input type="text" placeholder="Enter any URL, like google.com">
+                            </div>
+                            <button>Extract</button>
                         </div>
-                        <button>Extract</button>
+
+                        <div class="b2 hidden" id="b2">
+                            <div class="box">
+                                <h4>Feature coming soon</h4>
+                                <p>Bulk extraction is being worked on and will be released in the future.
+                                    <a href="#signup">Sign up for the waitlist</a> to get notified once this feature
+                                    becomes available.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="c2">
-                    <h4>Single Site</h4>
-                    <div class="box">
-                        <input type="text">
-                        <button>Extract</button>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -332,20 +360,49 @@
 
 
     <script>
-        // Get the navbar
         const navbar = document.getElementById("navbar");
-        
-        // Get the offset position of the navbar
+        const site_box = document.getElementById("site_box");
+        const single_site = document.getElementById("single_site");
+        const multiple_site = document.getElementById("multiple_site");
+        const b1 = document.getElementById("b1");
+        const b2 = document.getElementById("b2");
+        const menu = document.getElementById("menu");
+        const closeBtn = document.getElementById("close-btn");
+        const menuBtn = document.getElementById("menu-btn");
+
         const sticky = 80;
-        
-        // Add the sticky class to the navbar when you reach its scroll position. Remove the sticky class when you leave the scroll position.
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        })
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        })
+
+        single_site.addEventListener("click", () => {
+            console.log('Single site clicked !');
+            b2.classList.add("hidden");
+            b1.classList.remove("hidden");
+            multiple_site.classList.add("gray");
+            single_site.classList.remove("gray");
+        })
+
+        multiple_site.addEventListener("click", () => {
+            console.log('multiple site clicked !');
+            b1.classList.add("hidden");
+            b2.classList.remove("hidden");
+            single_site.classList.add("gray");
+            multiple_site.classList.remove("gray");
+        })
+
         function myFunction() {
-            console.log(window.scrollY)
-        if (window.scrollY > sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
+            // console.log(window.scrollY)
+            if (window.scrollY > sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
         }
     </script>
 </body>
