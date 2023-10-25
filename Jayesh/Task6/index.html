@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>TempMail</title>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <div class="nav">
+            <div class="container flex flex-center flex-row">
+                <div class="download-section flex flex-row">
+                    <div class="button flex flex-center">
+                        <img
+                            src="images/apple.svg"
+                            alt="apple"
+                            width="20"
+                            height="20"
+                        />
+                        <span>App Store</span>
+                    </div>
+                    <div class="button flex flex-center">
+                        <img
+                            src="images/gplay.svg"
+                            alt="google"
+                            width="20"
+                            height="20"
+                        />
+                        <span>Google Play</span>
+                    </div>
+                </div>
+                <div class="logo-section">
+                    <img src="images/brand-logo.png" alt="logo" />
+                </div>
+                <div class="temp-container flex flex-row flex-center">
+                    <div class="temp-number">
+                        <span>Temp 💬 Number</span>
+                    </div>
+                    <button class="premium">Premuim</button>
+                </div>
+            </div>
+        </div>
+        <!-- Hero Section -->
+        <div class="hero-contain">
+            <div class="hero-container flex flex-center flex-column">
+                <div class="mail-box">
+                    <h2 class="email">Your Temporary Email Address</h2>
+                    <div
+                        class="search-container flex flex-row flex-center flex-wrap"
+                    >
+                        <form class="search-box flex flex-center">
+                            <input
+                                type="text"
+                                name="search"
+                                class="search"
+                                placeholder="Loading..."
+                            />
+                            <button class="qrcode flex flex-center">
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M14.2219 16.8889H6.2219C5.73098 16.8889 5.33301 16.4909 5.33301 16C5.33301 15.5091 5.73098 15.1111 6.2219 15.1111H14.2219C14.7128 15.1111 15.1108 14.7132 15.1108 14.2222V6.22223C15.1108 5.73131 15.5088 5.33334 15.9997 5.33334C16.4906 5.33334 16.8886 5.73131 16.8886 6.22223V14.2222C16.8886 15.695 15.6947 16.8889 14.2219 16.8889ZM13.333 12.4445V7.11112C13.333 6.12928 12.5371 5.33334 11.5552 5.33334H7.11079C6.12895 5.33334 5.33301 6.12928 5.33301 7.11112V11.5556C5.33301 12.5374 6.12895 13.3333 7.11079 13.3333H8.88856C9.37948 13.3333 9.77745 12.9354 9.77745 12.4445C9.77745 11.9535 9.37948 11.5556 8.88856 11.5556H7.11079V7.11112H11.5552V12.4445C11.5552 12.9354 11.9532 13.3333 12.4441 13.3333C12.935 13.3333 13.333 12.9354 13.333 12.4445ZM26.6663 11.5556V7.11112C26.6663 6.12928 25.8704 5.33334 24.8886 5.33334H20.4441C19.4623 5.33334 18.6663 6.12928 18.6663 7.11112V8.8889C18.6663 9.37982 19.0643 9.77779 19.5552 9.77779C20.0461 9.77779 20.4441 9.37982 20.4441 8.8889V7.11112H24.8886V11.5556H19.5552C19.0643 11.5556 18.6663 11.9535 18.6663 12.4445C18.6663 12.9354 19.0643 13.3333 19.5552 13.3333H24.8886C25.8704 13.3333 26.6663 12.5374 26.6663 11.5556ZM13.333 24.8889V23.1111C13.333 22.6202 12.935 22.2222 12.4441 22.2222C11.9532 22.2222 11.5552 22.6202 11.5552 23.1111V24.8889H7.11079V20.4445H12.4441C12.935 20.4445 13.333 20.0465 13.333 19.5556C13.333 19.0646 12.935 18.6667 12.4441 18.6667H7.11079C6.12895 18.6667 5.33301 19.4626 5.33301 20.4445V24.8889C5.33301 25.8707 6.12895 26.6667 7.11079 26.6667H11.5552C12.5371 26.6667 13.333 25.8707 13.333 24.8889ZM26.6663 24.8889V20.4445C26.6663 19.4626 25.8704 18.6667 24.8886 18.6667H23.1108C22.6199 18.6667 22.2219 19.0646 22.2219 19.5556C22.2219 20.0465 22.6199 20.4445 23.1108 20.4445H24.8886V24.8889H20.4441V19.5556C20.4441 19.0646 20.0461 18.6667 19.5552 18.6667C19.0643 18.6667 18.6663 19.0646 18.6663 19.5556V24.8889C18.6663 25.8707 19.4623 26.6667 20.4441 26.6667H24.8886C25.8704 26.6667 26.6663 25.8707 26.6663 24.8889ZM16.8886 25.7778V19.5556C16.8886 19.0646 16.4906 18.6667 15.9997 18.6667C15.5088 18.6667 15.1108 19.0646 15.1108 19.5556V25.7778C15.1108 26.2687 15.5088 26.6667 15.9997 26.6667C16.4906 26.6667 16.8886 26.2687 16.8886 25.7778ZM26.6663 16C26.6663 15.5091 26.2684 15.1111 25.7775 15.1111H19.5552C19.0643 15.1111 18.6663 15.5091 18.6663 16C18.6663 16.4909 19.0643 16.8889 19.5552 16.8889H25.7775C26.2684 16.8889 26.6663 16.4909 26.6663 16Z"
+                                        fill="#ffffff"
+                                    ></path>
+                                </svg>
+                            </button>
+                            <div class="copy-uniq flex flex-center">
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M24.7397 9.91727V19.9465C24.7397 21.0543 23.8416 21.9524 22.7338 21.9524C22.1799 21.9524 21.7309 21.5033 21.7309 20.9494V14.27C21.7315 13.9643 21.6085 13.6713 21.3899 13.4576L17.8997 10.0075C17.2774 9.37513 16.4301 9.01459 15.5429 9.00461H11.7017C11.1478 9.00461 10.6987 8.55559 10.6987 8.00169V6.87841C10.6987 6.11327 11.0034 5.37962 11.5454 4.83953C12.0873 4.29943 12.822 3.99735 13.5872 4.00002H18.9127C19.6658 4.00761 20.3859 4.31006 20.9186 4.84247L23.9273 7.85125C24.4625 8.40421 24.7549 9.14788 24.7397 9.91727ZM19.8855 13.929L16.8768 10.9202C16.3453 10.386 15.6244 10.0832 14.8709 10.0777H9.54539C7.95407 10.0833 6.66698 11.3748 6.66699 12.9662V25.1116C6.66699 26.7068 7.96018 28 9.55541 28H17.8697C19.4531 27.9835 20.7281 26.6951 20.728 25.1116V15.9348C20.7358 15.1776 20.4479 14.4472 19.9257 13.8989L19.8855 13.929Z"
+                                        fill="#ffffff"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </form>
+                        <div class="search-btn-contain flex flex-row">
+                            <button class="qrcode-one flex flex-center">
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M14.2219 16.8889H6.2219C5.73098 16.8889 5.33301 16.4909 5.33301 16C5.33301 15.5091 5.73098 15.1111 6.2219 15.1111H14.2219C14.7128 15.1111 15.1108 14.7132 15.1108 14.2222V6.22223C15.1108 5.73131 15.5088 5.33334 15.9997 5.33334C16.4906 5.33334 16.8886 5.73131 16.8886 6.22223V14.2222C16.8886 15.695 15.6947 16.8889 14.2219 16.8889ZM13.333 12.4445V7.11112C13.333 6.12928 12.5371 5.33334 11.5552 5.33334H7.11079C6.12895 5.33334 5.33301 6.12928 5.33301 7.11112V11.5556C5.33301 12.5374 6.12895 13.3333 7.11079 13.3333H8.88856C9.37948 13.3333 9.77745 12.9354 9.77745 12.4445C9.77745 11.9535 9.37948 11.5556 8.88856 11.5556H7.11079V7.11112H11.5552V12.4445C11.5552 12.9354 11.9532 13.3333 12.4441 13.3333C12.935 13.3333 13.333 12.9354 13.333 12.4445ZM26.6663 11.5556V7.11112C26.6663 6.12928 25.8704 5.33334 24.8886 5.33334H20.4441C19.4623 5.33334 18.6663 6.12928 18.6663 7.11112V8.8889C18.6663 9.37982 19.0643 9.77779 19.5552 9.77779C20.0461 9.77779 20.4441 9.37982 20.4441 8.8889V7.11112H24.8886V11.5556H19.5552C19.0643 11.5556 18.6663 11.9535 18.6663 12.4445C18.6663 12.9354 19.0643 13.3333 19.5552 13.3333H24.8886C25.8704 13.3333 26.6663 12.5374 26.6663 11.5556ZM13.333 24.8889V23.1111C13.333 22.6202 12.935 22.2222 12.4441 22.2222C11.9532 22.2222 11.5552 22.6202 11.5552 23.1111V24.8889H7.11079V20.4445H12.4441C12.935 20.4445 13.333 20.0465 13.333 19.5556C13.333 19.0646 12.935 18.6667 12.4441 18.6667H7.11079C6.12895 18.6667 5.33301 19.4626 5.33301 20.4445V24.8889C5.33301 25.8707 6.12895 26.6667 7.11079 26.6667H11.5552C12.5371 26.6667 13.333 25.8707 13.333 24.8889ZM26.6663 24.8889V20.4445C26.6663 19.4626 25.8704 18.6667 24.8886 18.6667H23.1108C22.6199 18.6667 22.2219 19.0646 22.2219 19.5556C22.2219 20.0465 22.6199 20.4445 23.1108 20.4445H24.8886V24.8889H20.4441V19.5556C20.4441 19.0646 20.0461 18.6667 19.5552 18.6667C19.0643 18.6667 18.6663 19.0646 18.6663 19.5556V24.8889C18.6663 25.8707 19.4623 26.6667 20.4441 26.6667H24.8886C25.8704 26.6667 26.6663 25.8707 26.6663 24.8889ZM16.8886 25.7778V19.5556C16.8886 19.0646 16.4906 18.6667 15.9997 18.6667C15.5088 18.6667 15.1108 19.0646 15.1108 19.5556V25.7778C15.1108 26.2687 15.5088 26.6667 15.9997 26.6667C16.4906 26.6667 16.8886 26.2687 16.8886 25.7778ZM26.6663 16C26.6663 15.5091 26.2684 15.1111 25.7775 15.1111H19.5552C19.0643 15.1111 18.6663 15.5091 18.6663 16C18.6663 16.4909 19.0643 16.8889 19.5552 16.8889H25.7775C26.2684 16.8889 26.6663 16.4909 26.6663 16Z"
+                                        fill="#ffffff"
+                                    ></path>
+                                </svg>
+                                <span>QR Code</span>
+                            </button>
+                            <div class="copy-button-one flex flex-center">
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M24.7397 9.91727V19.9465C24.7397 21.0543 23.8416 21.9524 22.7338 21.9524C22.1799 21.9524 21.7309 21.5033 21.7309 20.9494V14.27C21.7315 13.9643 21.6085 13.6713 21.3899 13.4576L17.8997 10.0075C17.2774 9.37513 16.4301 9.01459 15.5429 9.00461H11.7017C11.1478 9.00461 10.6987 8.55559 10.6987 8.00169V6.87841C10.6987 6.11327 11.0034 5.37962 11.5454 4.83953C12.0873 4.29943 12.822 3.99735 13.5872 4.00002H18.9127C19.6658 4.00761 20.3859 4.31006 20.9186 4.84247L23.9273 7.85125C24.4625 8.40421 24.7549 9.14788 24.7397 9.91727ZM19.8855 13.929L16.8768 10.9202C16.3453 10.386 15.6244 10.0832 14.8709 10.0777H9.54539C7.95407 10.0833 6.66698 11.3748 6.66699 12.9662V25.1116C6.66699 26.7068 7.96018 28 9.55541 28H17.8697C19.4531 27.9835 20.7281 26.6951 20.728 25.1116V15.9348C20.7358 15.1776 20.4479 14.4472 19.9257 13.8989L19.8855 13.929Z"
+                                        fill="#ffffff"
+                                    ></path>
+                                </svg>
+                                <span>Copy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mail-box-text">
+                    <p>
+                        Forget about spam, advertising mailings, hacking and
+                        attacking robots. Keep your real mailbox clean and
+                        secure. Temp Mail provides temporary, secure, anonymous,
+                        free, disposable email address.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Button Container -->
+        <div class="outer-div">
+            <div class="button-container flex flex-center flex-wrap">
+                <button class="white-button flex flex-center">
+                    <span class="icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="22"
+                            height="22"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M14 8H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V10c0-1.103-.897-2-2-2z"
+                            />
+                            <path
+                                fill="currentColor"
+                                d="M20 2H10a2 2 0 0 0-2 2v2h8a2 2 0 0 1 2 2v8h2a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"
+                            />
+                        </svg>
+                    </span>
+                    <span class="text"> Copy </span>
+                </button>
+                <button class="white-button flex flex-center">
+                    <span class="icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="22"
+                            height="22"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M17.65 6.35A7.958 7.958 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"
+                            />
+                        </svg>
+                    </span>
+                    <span class="text"> Refresh </span>
+                </button>
+                <button class="white-button flex flex-center">
+                    <span class="icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="22"
+                            height="22"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1l1-4ZM15 5l3 3"
+                            />
+                        </svg>
+                    </span>
+                    <span class="text">Change</span>
+                </button>
+                <button class="white-button flex flex-center">
+                    <span class="icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="22"
+                            height="22"
+                            viewBox="0 0 15 15"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M3.64 2.27L7.5 6.13l3.84-3.84A.92.92 0 0 1 12 2a1 1 0 0 1 1 1a.9.9 0 0 1-.27.66L8.84 7.5l3.89 3.89A.9.9 0 0 1 13 12a1 1 0 0 1-1 1a.92.92 0 0 1-.69-.27L7.5 8.87l-3.85 3.85A.92.92 0 0 1 3 13a1 1 0 0 1-1-1a.9.9 0 0 1 .27-.66L6.16 7.5L2.27 3.61A.9.9 0 0 1 2 3a1 1 0 0 1 1-1c.24.003.47.1.64.27Z"
+                            />
+                        </svg>
+                    </span>
+                    <span class="text">Delete</span>
+                </button>
+            </div>
+        </div>
+        <!-- Main Container -->
+        <div class="outer-div">
+            <div class="main-container flex flex-column">
+                <div class="big-container">
+                    <div class="header-container flex flex-row">
+                        <div class="header-text">sender</div>
+                        <div class="header-text">subject</div>
+                        <div class="header-text header-text-uniq">view</div>
+                        <div class="header-text-two">inbox</div>
+                    </div>
+                    <div class="empty-container">
+                        <div class="animation-container">
+                            <div class="rotate flex flex-center">
+                                <svg
+                                    width="92"
+                                    height="94"
+                                    viewBox="0 0 92 87"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M26 54.37V38.9C26.003 37.125 26.9469 35.4846 28.48 34.59L43.48 25.84C45.027 24.9468 46.933 24.9468 48.48 25.84L63.48 34.59C65.0285 35.4745 65.9887 37.1167 66 38.9V54.37C66 57.1314 63.7614 59.37 61 59.37H31C28.2386 59.37 26 57.1314 26 54.37Z"
+                                        fill="#8C92A5"
+                                    ></path>
+                                    <path
+                                        d="M46 47.7L26.68 36.39C26.2325 37.1579 25.9978 38.0312 26 38.92V54.37C26 57.1314 28.2386 59.37 31 59.37H61C63.7614 59.37 66 57.1314 66 54.37V38.9C66.0022 38.0112 65.7675 37.1379 65.32 36.37L46 47.7Z"
+                                        fill="#CDCDD8"
+                                    ></path>
+                                    <path
+                                        d="M27.8999 58.27C28.7796 58.9758 29.8721 59.3634 30.9999 59.37H60.9999C63.7613 59.37 65.9999 57.1314 65.9999 54.37V38.9C65.9992 38.0287 65.768 37.1731 65.3299 36.42L27.8999 58.27Z"
+                                        fill="#E5E5F0"
+                                    ></path>
+                                    <path
+                                        class="emptyInboxRotation"
+                                        d="M77.8202 29.21L89.5402 25.21C89.9645 25.0678 90.4327 25.1942 90.7277 25.5307C91.0227 25.8673 91.0868 26.348 90.8902 26.75L87.0002 34.62C86.8709 34.8874 86.6407 35.0924 86.3602 35.19C86.0798 35.2806 85.7751 35.2591 85.5102 35.13L77.6502 31.26C77.2436 31.0643 76.9978 30.6401 77.0302 30.19C77.0677 29.7323 77.3808 29.3438 77.8202 29.21Z"
+                                        fill="#E5E5F0"
+                                    ></path>
+                                    <path
+                                        class="emptyInboxRotation"
+                                        d="M5.12012 40.75C6.36707 20.9791 21.5719 4.92744 41.2463 2.61179C60.9207 0.296147 79.4368 12.3789 85.2401 31.32"
+                                        stroke="#E5E5F0"
+                                        stroke-width="3"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    ></path>
+                                    <path
+                                        class="emptyInboxRotation"
+                                        d="M14.18 57.79L2.46001 61.79C2.03313 61.9358 1.56046 61.8088 1.2642 61.4686C0.967927 61.1284 0.906981 60.6428 1.11001 60.24L5.00001 52.38C5.12933 52.1127 5.35954 51.9076 5.64001 51.81C5.92044 51.7194 6.22508 51.7409 6.49001 51.87L14.35 55.74C14.7224 55.9522 14.9394 56.36 14.9073 56.7874C14.8753 57.2149 14.5999 57.5857 14.2 57.74L14.18 57.79Z"
+                                        fill="#E5E5F0"
+                                    ></path>
+                                    <path
+                                        class="emptyInboxRotation"
+                                        d="M86.9998 45.8C85.9593 65.5282 70.9982 81.709 51.4118 84.2894C31.8254 86.8697 13.1841 75.1156 7.06982 56.33"
+                                        stroke="#E5E5F0"
+                                        stroke-width="3"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <p class="empty-title">Your inbox is empty</p>
+                            <p class="empty-details">
+                                Waiting for incoming emails
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mid-text-container">
+                    <h1 class="mid-text">
+                        What is Disposable Temporary E-mail?
+                    </h1>
+                    <p>
+                        <b>Disposable email</b> - is a free email service that
+                        allows to receive email at a temporary address that
+                        self-destructed after a certain time elapses. It is also
+                        known by names like : tempmail, 10minutemail, 10minmail,
+                        throwaway email, fake-mail , fake email generator,
+                        burner mail or trash-mail. Many forums, Wi-Fi owners,
+                        websites and blogs ask visitors to register before they
+                        can view content, post comments or download something.
+                        Temp-Mail - is most advanced throwaway email service
+                        that helps you avoid spam and stay safe.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Popular Section -->
+        <div class="outer-div">
+            <div class="popular-contain">
+                <div class="popular-container">
+                    <h3 class="popular-title">Popular Articles</h3>
+                </div>
+                <div class="inner-textbox">
+                    <div class="box flex flex-row">
+                        <div class="box-text">
+                            <span
+                                >Private domains. How to get your own Temporary
+                                Email (2021)</span
+                            >
+                            <p>
+                                How to create temporary email on your own
+                                private domain and how it helps you to bypass
+                                common issues with registrations.
+                            </p>
+                        </div>
+                        <div class="box-image">
+                            <img src="images/image1.webp" alt="" />
+                        </div>
+                    </div>
+                    <div class="box flex flex-row">
+                        <div class="box-text">
+                            <span
+                                >Private domains. How to get your own Temporary
+                                Email (2021)</span
+                            >
+                            <p>
+                                How to create temporary email on your own
+                                private domain and how it helps you to bypass
+                                common issues with registrations.
+                            </p>
+                        </div>
+                        <div class="box-image">
+                            <img src="images/image1.webp" alt="" />
+                        </div>
+                    </div>
+                    <div class="box flex flex-row">
+                        <div class="box-text">
+                            <span
+                                >Private domains. How to get your own Temporary
+                                Email (2021)</span
+                            >
+                            <p>
+                                How to create temporary email on your own
+                                private domain and how it helps you to bypass
+                                common issues with registrations.
+                            </p>
+                        </div>
+                        <div class="box-image">
+                            <img src="images/image1.webp" alt="" />
+                        </div>
+                    </div>
+                    <div class="box flex flex-row">
+                        <div class="box-text">
+                            <span
+                                >Private domains. How to get your own Temporary
+                                Email (2021)</span
+                            >
+                            <p>
+                                How to create temporary email on your own
+                                private domain and how it helps you to bypass
+                                common issues with registrations.
+                            </p>
+                        </div>
+                        <div class="box-image">
+                            <img src="images/image1.webp" alt="" />
+                        </div>
+                    </div>
+                    <div class="box flex flex-row">
+                        <div class="box-text">
+                            <span
+                                >Private domains. How to get your own Temporary
+                                Email (2021)</span
+                            >
+                            <p>
+                                How to create temporary email on your own
+                                private domain and how it helps you to bypass
+                                common issues with registrations.
+                            </p>
+                        </div>
+                        <div class="box-image">
+                            <img src="images/image1.webp" alt="" />
+                        </div>
+                    </div>
+                    <div class="box flex flex-row">
+                        <div class="box-text">
+                            <span
+                                >Private domains. How to get your own Temporary
+                                Email (2021)</span
+                            >
+                            <p>
+                                How to create temporary email on your own
+                                private domain and how it helps you to bypass
+                                common issues with registrations.
+                            </p>
+                        </div>
+                        <div class="box-image">
+                            <img src="images/image1.webp" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main-Text Container -->
+        <div class="outer-div">
+            <div class="main-text">
+                <h2>The Tech behind Disposable Email Addresses</h2>
+                <p>
+                    Everyone owns an email address each and every hour, for
+                    everything from connecting at work, with business prospects,
+                    reaching out to friends and colleagues using the email
+                    address as an online passport. Nearly 99% of all apps and
+                    services we sign-up today required an email address,
+                    likewise to most shoppers loyalty cards, contest and offer
+                    entries, and more. <br /><br />
+                    We all enjoy having an email address, but getting tons of
+                    spam emails each day doesn’t feel comfortable. Furthermore,
+                    it’s entirely common for stores to have their databases
+                    hacked, leaving your business email address at risk and more
+                    likely to end up on spam lists. Still, nothing done online
+                    is 100% private. Thus you need to protect your email contact
+                    identity and best done using disposable emails address.
+                </p>
+                <h2>So, What Is A Disposable Email Address?</h2>
+                <p>
+                    Recently, I found a bounce rate complex than usual on my
+                    latest email blast! I later realized the surge of users (or
+                    bots) signing up for my services hiding their real identity
+                    using disposable mail addresses.
+                    <br />
+                    <br />
+                    Disposable email address (DEA) technically means an approach
+                    where a user’s with a unique email address gets a temporary
+                    email address for your current contact. The DEA allow the
+                    creation of an email address that passes validity need to
+                    sign-up for services and website without having to show your
+                    true identity.
+                    <br />
+                    <br />
+                    <br />
+                    Disposable emails address if compromised or used in
+                    connection with email abuse online, the owner can’t be tied
+                    to the abuse and quickly cancel its application without
+                    affecting other contacts. With temporary mail, you can you
+                    receive your emails from the fake emails in your genuine
+                    emails address for a specified time set. The fake email
+                    address is simply a through-away email, temporary email set
+                    and self-destructs email.
+                    <br />
+                    <br />
+                </p>
+                <h2>Why would you need a fake email address?</h2>
+                <p>
+                    You must have noted services such as Amazon Prime, Hulu and
+                    Netflix allow limited-time test runs(trials), however, if
+                    still determined to use the services all you need is a
+                    disposable email address. Technically, you can extend your
+                    trial usage using a different email address linked to your
+                    original (genuine) after the trial period expires.
+                    <br /><br />
+                    An offline or online retailer tend to demand an email
+                    address to take advantage of their offers, however, this
+                    result in an unwanted deluge of spam promotional emails that
+                    you could avoid. Temporary email address makes it easy to
+                    cut out those irritating messages you are still receiving.
+                    <br /><br />
+                    Technically, the idea of a temporary email address conjures
+                    up with black hat hackers and underworld internet, but there
+                    are convincing reason to us fake email services.
+                    <br /><br />
+                    If you are looking for legitimate reasons to use a
+                    disposable email address here’s a few:
+                </p>
+                <ul>
+                    <li>
+                        <b> Sign-Up For Store Loyalty Card: </b>
+                        <br />If you don’t want to get promotional emails from
+                        the store adverting new products, use a disposable email
+                        address instead of your business email address, and you
+                        rule out spam emails. If the store gets hacked for
+                        email, you real email address won’t get stolen.
+                    </li>
+                    <li>
+                        <b> Test Your App: </b>
+                        <br />You just completed coding a web app, and you want
+                        to test it comprehensively before releasing it for sale,
+                        you can easily get 100 disposable emails, create dummy
+                        accounts and test it yourself other than hiring
+                        unreliable users online to test the app.
+                    </li>
+                    <li>
+                        <b> Sign-Up For Double Account With A Web App: </b>
+                        <br />You need another IFTTT account to program a second
+                        Twitter account run for your marketing site. A new
+                        account needs a different mail from your default, to
+                        rule out managing a new email inbox, get a new
+                        disposable email address at temp-mail.org
+                    </li>
+                    <li>
+                        <b> Eliminate Spam: </b>
+                        <br />A Disposable email address is a very useful tool
+                        against spam, especially, for users who consistently
+                        access web forms, forums and discussion groups you can
+                        curb spam to an absolute minimum with a disposable email
+                        address.
+                    </li>
+                </ul>
+                <h2>How to Choose a Disposable Email?</h2>
+                <p>The best fake email provider should:</p>
+                <ul>
+                    <li>
+                        Allow users create temporary emails address at the click
+                        of a button.
+                    </li>
+                    <li>
+                        No registration is registration or identity information
+                        about the user.
+                    </li>
+                    <li>The email address should remain anonymous.</li>
+                    <li>
+                        Offer more than one email address (as many as you may
+                        want).
+                    </li>
+                    <li>
+                        Offers temporarily email stored (temporal email inbox at
+                        user’s disposal).
+                    </li>
+                    <li>
+                        Straightforward and functional design to get a mundane
+                        email.
+                    </li>
+                    <li>
+                        Provider random account and users can choose an address
+                        of choice.
+                    </li>
+                </ul>
+                <p>
+                    Thus stay spam free and save time with temp-mail.org your
+                    favorite email service.
+                </p>
+                <h2>How to Use Disposable Email Address?</h2>
+                <p>
+                    Users choose to get disposable email address by creating a
+                    new email account with their current email provider’s such
+                    as Gmail, but the account comes with many challenges such as
+                    you will have to manage emails new account. Users, who opt
+                    for free mail services by creating a new account, put up
+                    with a new email address.
+                    <br /><br />
+                    It’d work if you had one email address and a few disposable
+                    emails from temp-mail.org and managed one account inbox.
+                    <br /><br />
+                    The amazing thing about a disposable email address is you
+                    can forward directly to your real email account. In case the
+                    disposable email address is compromised, and you are
+                    suspicious of one of your contacts you can have those emails
+                    sent directly to your trash, and for those necessary
+                    connections have them sent directly to your real email
+                    address inbox.
+                </p>
+                <h2>To Conclude:</h2>
+                <p>
+                    Have a disposable mail address system set up in a fantastic
+                    way to make sure when you participate in online wikis, chat
+                    rooms, and file sharing services and bulletin boards forums
+                    your real identity is never disclosed and never sold to
+                    anyone to avoid mail spam with Temp-mail.org.
+                </p>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="page-footer">
+            <div class="footer-container">
+                <div class="btn-container flex flex-center flex-wrap">
+                    <div class="footer-btn">premium</div>
+                    <div class="footer-btn">api</div>
+                    <div class="footer-btn">articles</div>
+                    <div class="footer-btn">10 minute mail</div>
+                    <div class="footer-btn">email generator</div>
+                    <div class="footer-btn">privacy</div>
+                    <div class="footer-btn">terms</div>
+                    <div class="footer-btn">faq</div>
+                    <div class="footer-btn">contacts</div>
+                    <div class="footer-btn">advertising</div>
+                </div>
+                <div class="store-container flex flex-center flex-wrap">
+                    <div class="copyright">
+                        <span>ReSIM eSIM | </span>
+                        <span>10MinuteMail | </span>
+                        <span>Temp Number</span>
+                    </div>
+                    <div class="store-btns flex flex-row flex-center flex-wrap">
+                        <div class="button-one flex flex-center">
+                            <img
+                                width="30"
+                                height="30"
+                                src="images/apple.svg"
+                                alt=""
+                            />
+                            <span>App Store</span>
+                        </div>
+                        <div class="button-one flex flex-center">
+                            <img
+                                width="30"
+                                height="30"
+                                src="images/gplay.svg"
+                                alt=""
+                            />
+                            <span>Google Play</span>
+                        </div>
+                        <button class="store">
+                            <img
+                                width="30"
+                                height="30"
+                                src="images/amazon.svg"
+                                alt=""
+                            />
+                        </button>
+                        <button class="store">
+                            <img
+                                width="30"
+                                height="30"
+                                src="images/chrome.svg"
+                                alt=""
+                            />
+                        </button>
+                        <button class="store">
+                            <img
+                                width="30"
+                                height="30"
+                                src="images/firefox.svg"
+                                alt=""
+                            />
+                        </button>
+                        <button class="store">
+                            <img
+                                width="30"
+                                height="30"
+                                src="images/slack.svg"
+                                alt=""
+                            />
+                        </button>
+                        <button class="store">
+                            <img
+                                width="30"
+                                height="30"
+                                src="images/telegram.svg"
+                                alt=""
+                            />
+                        </button>
+                    </div>
+                    <button class="lang-btn flex flex-center">
+                        <img
+                            width="25"
+                            height="25"
+                            src="images/flag.svg"
+                            alt=""
+                        />
+                        <span>EN</span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path fill="currentColor" d="m7 10l5 5l5-5H7Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
