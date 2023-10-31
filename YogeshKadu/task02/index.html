@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <link rel="stylesheet" href="https://raw.githubusercontent.com/liabru/dat-gui-light-theme/master/dat-gui-light-theme.css"> -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+                        FontFace:{
+                            "Poppins":["Poppins","sans-serif"]
+                        }
+                    },
+				},
+			};
+		</script>
+		<title>Memory Game</title>
+		<!-- dat.gui -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"
+			integrity="sha512-WoO4Ih0CDOSLYafy22wZD/mcJ7k0ESLqtQsFa6zFKnEUrbtuGU+GkLtVhgt93xa2qewG5gKEC6CWlN8OaCTSVg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<link rel="stylesheet" href="./css/dat-gui.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="bg-slate-800 h-screen flex justify-center items-center">
+			<div
+				class="container w-full max-w-lg bg-slate-700 p-5 rounded shadow-lg"
+			>
+				<h2 class="text-white text-2xl text-center mb-5">Memory Game</h2>
+                <div class="w-full grid grid-cols-4 gap-2" id="gridContainer">
+                    
+                </div>
+			</div>
+		</div>
+		<script src="./dot.setting.js"></script>
+		<!-- <script src="./script.js"></script> -->
+	</body>
+</html>

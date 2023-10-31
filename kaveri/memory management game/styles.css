@@ -30,8 +30,6 @@ h2{
     color:#fff;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-
-
 }
 
 .reset{
@@ -56,7 +54,7 @@ h2{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    transform-style: preserve-3d;  
+    transform-style: preserve-3d;
     perspective: 500px;  
 }
 .item{
